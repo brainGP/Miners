@@ -1,42 +1,88 @@
+// src > components > Header.jsx
+import { useState } from "react";
 import { useLocation } from "react-router-dom";
 import { disablePageScroll, enablePageScroll } from "scroll-lock";
 
-import { brainwave } from "../assets";
+// Asset and utility imports
+import { brainwave, background } from "../assets";
 import { navigation } from "../constants";
 import Button from "./Button";
 import MenuSvg from "../assets/svg/MenuSvg";
-import { HamburgerMenu } from "./design/Header";
-import { useState } from "react";
 
+// Design components from the design folder
+
+// Inner components for the HamburgerMenu design
+const Rings = () => {
+  return (
+    <div className="absolute top-1/2 left-1/2 w-[51.375rem] aspect-square border border-n-2/10 rounded-full -translate-x-1/2 -translate-y-1/2">
+      <div className="absolute top-1/2 left-1/2 w-[36.125rem] aspect-square border border-n-2/10 rounded-full -translate-x-1/2 -translate-y-1/2"></div>
+      <div className="absolute top-1/2 left-1/2 w-[23.125rem] aspect-square border border-n-2/10 rounded-full -translate-x-1/2 -translate-y-1/2"></div>
+    </div>
+  );
+};
+
+const SideLines = () => {
+  return (
+    <>
+      <div className="absolute top-0 left-5 w-0.25 h-full bg-n-6"></div>
+      <div className="absolute top-0 right-5 w-0.25 h-full bg-n-6"></div>
+    </>
+  );
+};
+
+const BackgroundCircles = () => {
+  return (
+    <>
+      <div className="absolute top-[4.4rem] left-16 w-3 h-3 bg-gradient-to-b from-[#DD734F] to-[#1A1A32] rounded-full"></div>
+      <div className="absolute top-[12.6rem] right-16 w-3 h-3 bg-gradient-to-b from-[#B9AEDF] to-[#1A1A32] rounded-full"></div>
+      <div className="absolute top-[26.8rem] left-12 w-6 h-6 bg-gradient-to-b from-[#88E5BE] to-[#1A1A32] rounded-full"></div>
+    </>
+  );
+};
+
+const HamburgerMenu = () => {
+  return (
+    <div className="absolute inset-0 pointer-events-none lg:hidden">
+      <div className="absolute inset-0 opacity-[.03]">
+        <img
+          className="w-full h-full object-cover"
+          src={background}
+          width={688}
+          height={953}
+          alt="Background"
+        />
+      </div>
+      <Rings />
+      <SideLines />
+      <BackgroundCircles />
+    </div>
+  );
+};
+
+// Main Header Component
 const Header = () => {
   const pathname = useLocation();
   const [openNavigation, setOpenNavigation] = useState(false);
 
   const toggleNavigation = () => {
-    if (openNavigation) {
-      setOpenNavigation(false);
-      enablePageScroll();
-    } else {
-      setOpenNavigation(true);
-      disablePageScroll();
-    }
+    openNavigation ? enablePageScroll() : disablePageScroll();
+    setOpenNavigation(!openNavigation);
   };
 
   const handleClick = () => {
     if (!openNavigation) return;
-
     enablePageScroll();
     setOpenNavigation(false);
   };
 
   return (
     <div
-      className={`fixed top-0 left-0 w-full z-50  border-b border-n-6 lg:bg-n-8/90 lg:backdrop-blur-sm ${
+      className={`fixed top-0 left-0 w-full z-50 border-b border-n-6 lg:bg-n-8/90 lg:backdrop-blur-sm ${
         openNavigation ? "bg-n-8" : "bg-n-8/90 backdrop-blur-sm"
       }`}
     >
       <div className="flex items-center px-5 lg:px-7.5 xl:px-10 max-lg:py-4">
-        <a className="block w-[12rem] xl:mr-8" href="#hero">
+        <a className="block w-[12rem] xl:mr-8" href="/">
           <img src={brainwave} width={190} height={40} alt="Brainwave" />
         </a>
 
@@ -63,7 +109,6 @@ const Header = () => {
               </a>
             ))}
           </div>
-
           <HamburgerMenu />
         </nav>
 

@@ -1,15 +1,81 @@
+import React from "react";
 import Section from "./Section";
 import Heading from "./Heading";
-import { service1, service2, service3, check } from "../assets";
-import { brainwaveServices, brainwaveServicesIcons } from "../constants";
 import {
-  PhotoChatMessage,
-  Gradient,
-  VideoBar,
-  VideoChatMessage,
-} from "./design/Services";
-
+  service1,
+  service2,
+  service3,
+  check,
+  brainwaveWhiteSymbol,
+  gradient,
+  play,
+} from "../assets";
+import { brainwaveServices, brainwaveServicesIcons } from "../constants";
+import { ChatBubbleWing } from "../assets/svg/ChatBubbleWing";
 import Generating from "./Generating";
+
+const Gradient = () => {
+  return (
+    <div className="absolute top-0 -left-[10rem] w-[56.625rem] h-[56.625rem] opacity-50 mix-blend-color-dodge pointer-events-none">
+      <img
+        className="absolute top-1/2 left-1/2 w-[79.5625rem] max-w-[79.5625rem] h-[88.5625rem] -translate-x-1/2 -translate-y-1/2"
+        src={gradient}
+        width={1417}
+        height={1417}
+        alt="Gradient"
+      />
+    </div>
+  );
+};
+
+const PhotoChatMessage = () => {
+  return (
+    <div className="absolute top-8 right-8 max-w-[17.5rem] py-6 px-8 bg-black rounded-t-xl rounded-bl-xl font-code text-base lg:top-16 lg:right-[8.75rem] lg:max-w-[17.5rem]">
+      Hey Brainwave, enhance this photo
+      <ChatBubbleWing className="absolute left-full bottom-0" />
+    </div>
+  );
+};
+
+const VideoChatMessage = () => {
+  return (
+    <div className="absolute top-8 left-[3.125rem] w-full max-w-[14rem] pt-2.5 pr-2.5 pb-7 pl-5 bg-n-6 rounded-t-xl rounded-br-xl font-code text-base md:max-w-[17.5rem]">
+      Video generated!
+      <div className="absolute left-5 -bottom-[1.125rem] flex items-center justify-center w-[2.25rem] h-[2.25rem] bg-color-1 rounded-[0.75rem]">
+        <img
+          src={brainwaveWhiteSymbol}
+          width={26}
+          height={26}
+          alt="Brainwave"
+        />
+      </div>
+      <p className="tagline absolute right-2.5 bottom-1 text-[0.625rem] text-n-3 uppercase">
+        just now
+      </p>
+      <ChatBubbleWing
+        className="absolute right-full bottom-0 -scale-x-100"
+        pathClassName="fill-n-6"
+      />
+    </div>
+  );
+};
+
+const VideoBar = () => {
+  return (
+    <div className="absolute left-0 bottom-0 w-full flex items-center p-6">
+      <img
+        src={play}
+        width={24}
+        height={24}
+        alt="Play"
+        className="object-contain mr-3"
+      />
+      <div className="flex-1 bg-[#D9D9D9]">
+        <div className="w-1/2 h-0.5 bg-color-1"></div>
+      </div>
+    </div>
+  );
+};
 
 const Services = () => {
   return (
@@ -43,7 +109,7 @@ const Services = () => {
                     key={index}
                     className="flex items-start py-4 border-t border-n-6"
                   >
-                    <img width={24} height={24} src={check} />
+                    <img width={24} height={24} src={check} alt="check" />
                     <p className="ml-4">{item}</p>
                   </li>
                 ))}
@@ -68,8 +134,8 @@ const Services = () => {
               <div className="absolute inset-0 flex flex-col justify-end p-8 bg-gradient-to-b from-n-8/0 to-n-8/90 lg:p-15">
                 <h4 className="h4 mb-4">Photo editing</h4>
                 <p className="body-2 mb-[3rem] text-n-3">
-                  Automatically enhance your photos using our AI app&apos;s
-                  photo editing feature. Try it now!
+                  Automatically enhance your photos using our AI app's photo
+                  editing feature. Try it now!
                 </p>
               </div>
 
@@ -80,7 +146,7 @@ const Services = () => {
               <div className="py-12 px-4 xl:px-8">
                 <h4 className="h4 mb-4">Video generation</h4>
                 <p className="body-2 mb-[2rem] text-n-3">
-                  The world’s most powerful AI photo and video art generation
+                  The world's most powerful AI photo and video art generation
                   engine. What will you create?
                 </p>
 

@@ -39,22 +39,22 @@ import {
 export const navigation = [
   {
     id: "0",
-    title: "Features",
+    title: "Бидний давуу талууд",
     url: "#features",
   },
   {
     id: "1",
-    title: "Pricing",
+    title: "Үнийн мэдээлэл",
     url: "#pricing",
   },
   {
     id: "2",
-    title: "How to use",
+    title: "Хэрхэн ашиглах вэ",
     url: "#how-to-use",
   },
   {
     id: "3",
-    title: "Roadmap",
+    title: "Сургалтын замнал",
     url: "#roadmap",
   },
   {

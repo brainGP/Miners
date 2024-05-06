@@ -1,9 +1,18 @@
+// src/components/Benefits.jsx
+
+import React from "react";
 import { benefits } from "../constants";
 import Heading from "./Heading";
 import Section from "./Section";
 import Arrow from "../assets/svg/Arrow";
-import { GradientLight } from "./design/Benefits";
 import ClipPath from "../assets/svg/ClipPath";
+
+// GradientLight component is now moved inside this file
+const GradientLight = () => {
+  return (
+    <div className="absolute top-0 left-1/4 w-full aspect-square bg-radial-gradient from-[#28206C] to-[#28206C]/0 to-70% pointer-events-none" />
+  );
+};
 
 const Benefits = () => {
   return (

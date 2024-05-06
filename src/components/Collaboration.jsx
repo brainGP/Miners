@@ -1,9 +1,28 @@
-import { brainwaveSymbol, check } from "../assets";
+// src > components > design > Collaboration.jsx
+import React from "react";
+import { curve1, curve2, brainwaveSymbol, check } from "../assets";
 import { collabApps, collabContent, collabText } from "../constants";
 import Button from "./Button";
 import Section from "./Section";
-import { LeftCurve, RightCurve } from "./design/Collaboration";
 
+// Design components for curves
+const RightCurve = () => {
+  return (
+    <div className="hidden absolute top-1/2 left-full w-[10.125rem] -mt-1 ml-10 pointer-events-none xl:block">
+      <img src={curve2} width={162} height={76} alt="Curve 2" />
+    </div>
+  );
+};
+
+const LeftCurve = () => {
+  return (
+    <div className="hidden absolute top-1/2 right-full w-[32.625rem] -mt-1 mr-10 pointer-events-none xl:block">
+      <img src={curve1} width={522} height={182} alt="Curve 1" />
+    </div>
+  );
+};
+
+// Main collaboration component including design components
 const Collaboration = () => {
   return (
     <Section crosses>
@@ -12,7 +31,6 @@ const Collaboration = () => {
           <h2 className="h2 mb-4 md:mb-8">
             AI Chat App for seamless collaboration
           </h2>
-
           <ul className="max-w-[22rem] mb-10 md:mb-14">
             {collabContent.map((item) => (
               <li className="mb-3 py-3" key={item.id}>
@@ -26,7 +44,6 @@ const Collaboration = () => {
               </li>
             ))}
           </ul>
-
           <Button>Try it now</Button>
         </div>
 
@@ -35,7 +52,7 @@ const Collaboration = () => {
             {collabText}
           </p>
 
-          <div className="relative left-1/2 flex w-[22rem] aspect-square border border-n-6 rounded-full -translate-x-1/2 scale:75 md:scale-100">
+          <div className="relative left-1/2 flex w-[22rem] aspect-square border border-n-6 rounded-full -translate-x-1/2 scale-75 md:scale-100">
             <div className="flex w-60 aspect-square m-auto border border-n-6 rounded-full">
               <div className="w-[6rem] aspect-square m-auto p-[0.2rem] bg-conic-gradient rounded-full">
                 <div className="flex items-center justify-center w-full h-full bg-n-8 rounded-full">
