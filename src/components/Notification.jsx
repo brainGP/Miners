@@ -36,7 +36,9 @@ const Notification = ({ className, title }) => {
               </li>
             ))}
           </ul>
-          <div className="body-2 text-n-13">Яасан Steam ingej shaadgui</div>
+          <div className="body-2 text-n-13">
+            End yamar neg ym bodoj baigaad bichne bas zurgiig ni solino
+          </div>
         </div>
       </div>
     </div>
