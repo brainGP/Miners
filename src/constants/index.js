@@ -54,8 +54,8 @@ export const navigation = [
   },
   {
     id: "3",
-    title: "Сургалтын замнал",
-    url: "/#roadmap",
+    title: "Алсын хараа",
+    url: "/#vision",
   },
   // {
   //   id: "4",
