@@ -113,12 +113,12 @@ const Header = () => {
         </nav>
 
         <a
-          href="#signup"
+          href="/SignUp"
           className="button hidden mr-8 text-n-1/50 transition-colors hover:text-n-1 lg:block"
         >
           Бүртгүүлэх
         </a>
-        <Button className="hidden lg:flex" href="#login">
+        <Button className="hidden lg:flex" href="/Login">
           Нэвтрэх
         </Button>
 
