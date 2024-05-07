@@ -1,5 +1,5 @@
 // src > components > design > Collaboration.jsx
-import React from "react";
+// import React from "react";
 import { curve1, curve2, brainwaveSymbol, check } from "../assets";
 import { collabApps, collabContent, collabText } from "../constants";
 import Button from "./Button";
