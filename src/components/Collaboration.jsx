@@ -28,9 +28,7 @@ const Collaboration = () => {
     <Section crosses>
       <div className="container lg:flex">
         <div className="max-w-[25rem]">
-          <h2 className="h2 mb-4 md:mb-8">
-            AI Chat App for seamless collaboration
-          </h2>
+          <h2 className="h2 mb-4 md:mb-8">Сургалтууд</h2>
           <ul className="max-w-[22rem] mb-10 md:mb-14">
             {collabContent.map((item) => (
               <li className="mb-3 py-3" key={item.id}>
@@ -44,7 +42,7 @@ const Collaboration = () => {
               </li>
             ))}
           </ul>
-          <Button>Try it now</Button>
+          <Button className="mt-36">Аялалаа эхлүүлэх</Button>
         </div>
 
         <div className="lg:ml-auto xl:w-[38rem] mt-4">

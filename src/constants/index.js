@@ -95,7 +95,7 @@ export const roadmap = [
   {
     id: "0",
     title: "Олон хэлний сонголт",
-    text: "Монгол гэлтгүй олон хэлний сонголттой манай платформыг ашиглаж, программ хамгамжийн мэдлэг, мэдээлэлтэй болно.",
+    text: "Монгол гэлтгүй олон хэлний сонголттой манай платформыг ашиглаж, программ хангамжийн мэдлэг, мэдээлэлтэй болно.",
     date: "May 2024",
     status: "Sep",
     imageUrl: roadmap1,
@@ -128,21 +128,21 @@ export const roadmap = [
 ];
 
 export const collabText =
-  "With smart automation and top-notch security, it's the perfect solution for teams looking to work smarter.";
+  "Ойлгомжтойгоор хүссэн программ хангамжаа, хүссэн цагтаа, хаана ч сурч болох Miners Платформ.";
 
 export const collabContent = [
   {
     id: "0",
-    title: "Seamless Integration",
+    title: "Үр дүнтэй",
     text: collabText,
   },
   {
     id: "1",
-    title: "Smart Automation",
+    title: "Бодитоор ашиглаж болохуйц",
   },
   {
     id: "2",
-    title: "Top-notch Security",
+    title: "Шинэлэг арга барилаар",
   },
 ];
 
