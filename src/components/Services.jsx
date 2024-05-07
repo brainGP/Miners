@@ -7,8 +7,8 @@ import {
   gradient,
   play,
   service1,
-  service2,
-  service3,
+  // service2,
+  // service3,
   check,
 } from "../assets";
 import { brainwaveServices, brainwaveServicesIcons } from "../constants";
@@ -87,7 +87,7 @@ const Services = () => {
     <Section id="how-to-use">
       <div className="container">
         <Heading
-          title="Generative AI made for creators."
+          title="Суралцах хүсэлтэй хүмүүст зориулсан AI."
           text="Brainwave unlocks the potential of AI-powered applications"
         />
 
