@@ -8,10 +8,7 @@ import { brainwave, background } from "../assets";
 import { navigation } from "../constants";
 import Button from "./Button";
 import MenuSvg from "../assets/svg/MenuSvg";
-
-// Design components from the design folder
-
-// Inner components for the HamburgerMenu design
+import { Link } from "react-router-dom";
 const Rings = () => {
   return (
     <div className="absolute top-1/2 left-1/2 w-[51.375rem] aspect-square border border-n-2/10 rounded-full -translate-x-1/2 -translate-y-1/2">
@@ -121,12 +118,6 @@ const Header = () => {
         <Button className="hidden lg:flex" href="/Login">
           Нэвтрэх
         </Button>
-        {/* <Link to="/login" className="button hidden lg:flex">
-          Нэвтрэх
-        </Link> */}
-        {/* <Button href="/Login" className="ml-auto lg:hidden">
-          Нэвтрэх
-        </Button> */}
 
         <Button
           className="ml-auto lg:hidden"
