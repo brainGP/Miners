@@ -1,11 +1,15 @@
+// src > components > Header.jsx
 import { useState } from "react";
 import { useLocation } from "react-router-dom";
 import { disablePageScroll, enablePageScroll } from "scroll-lock";
 
+// Asset and utility imports
 import { brainwave, background } from "../assets";
 import { navigation } from "../constants";
 import Button from "./Button";
 import MenuSvg from "../assets/svg/MenuSvg";
+
+// Design components from the design folder
 
 // Inner components for the HamburgerMenu design
 const Rings = () => {
