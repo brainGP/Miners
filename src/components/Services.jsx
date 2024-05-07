@@ -105,9 +105,9 @@ const Services = () => {
             </div>
 
             <div className="relative z-1 max-w-[17rem] ml-auto">
-              <h4 className="h4 mb-4">Smartest AI</h4>
-              <p className="body-2 mb-[3rem] text-n-3">
-                Brainwave unlocks the potential of AI-powered applications
+              <h4 className="h5 mb-4">Хиймэл оюун ухаан</h4>
+              <p className="body-2 mb-[3rem] text-blue-200">
+                ChatBOT-ын тусламжтай хүссэн зүйлээ сурч мэд!
               </p>
               <ul className="body-2">
                 {brainwaveServices.map((item, index) => (
