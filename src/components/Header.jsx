@@ -121,6 +121,12 @@ const Header = () => {
         <Button className="hidden lg:flex" href="/Login">
           Нэвтрэх
         </Button>
+        {/* <Link to="/login" className="button hidden lg:flex">
+          Нэвтрэх
+        </Link> */}
+        {/* <Button href="/Login" className="ml-auto lg:hidden">
+          Нэвтрэх
+        </Button> */}
 
         <Button
           className="ml-auto lg:hidden"
