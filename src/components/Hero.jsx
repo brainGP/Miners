@@ -87,10 +87,10 @@ const Hero = () => {
             </span>
           </h1>
           <p className="body-1 max-w-3xl mx-auto mb-6 text-n-2 lg:mb-8">
-            Welcome Message or Description
+            Тавтай морил
           </p>
           <Button href="/login" white>
-            Call to Action
+            Аялалдаа гарах
           </Button>
         </div>
         <div className="relative max-w-[23rem] mx-auto md:max-w-5xl xl:mb-24">
@@ -116,7 +116,7 @@ const Hero = () => {
                 <ScrollParallax isAbsolutelyPositioned>
                   <Notification
                     className="hidden absolute -right-[5.5rem] bottom-[11rem] w-[18rem] xl:flex"
-                    title="Code generation"
+                    title="Танд туслах хиймэл оюун ухаант хөтөч"
                   />
                 </ScrollParallax>
               </div>
