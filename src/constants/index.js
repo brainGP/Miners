@@ -44,23 +44,24 @@ import {
 export const navigation = [
   {
     id: "0",
-    title: "Бидний давуу талууд",
-    url: "/#features",
+    title: "Бидний тухай",
+    url: "/",
   },
   {
     id: "1",
-    title: "Үнийн мэдээлэл",
-    url: "/#pricing",
+    title: "Сургалт",
+    url: "/#features",
   },
   {
     id: "2",
-    title: "Хэрхэн ашиглах вэ",
+    title: "Давуу тал",
     url: "/#how-to-use",
   },
+
   {
     id: "3",
     title: "Алсын хараа",
-    url: "/#vision",
+    url: "/#roadmap",
   },
   // {
   //   id: "4",

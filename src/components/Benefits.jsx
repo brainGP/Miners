@@ -20,7 +20,7 @@ const Benefits = () => {
       <div className="container relative z-2">
         <Heading
           className="md:max-w-md lg:max-w-2xl"
-          title="Эрэлттэй технологиуд"
+          title="Эрэлттэй технологиудыг зааж өгөх"
         />
 
         <div className="flex flex-wrap gap-10 mb-10">
