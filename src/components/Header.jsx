@@ -115,10 +115,13 @@ const Header = () => {
         >
           Бүртгүүлэх
         </a>
-        <Button className="hidden lg:flex" href="/Login">
+
+        <Button
+          className="hidden lg:flex undefined gradientButton relative bg-dark rounded-[4px] hover:before:blur  before:transition before:ease-in-out before:duration-300"
+          href="/Login"
+        >
           Нэвтрэх
         </Button>
-
         <Button
           className="ml-auto lg:hidden"
           px="px-3"
