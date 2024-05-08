@@ -31,100 +31,41 @@ const Login = () => {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center pt-20">
-      <div className="max-w-md w-full mx-auto bg-white p-8 border border-gray-300 rounded-lg shadow-lg">
-        <h1 className="text-xl font-bold text-center mb-4">
-          Let's get started
-        </h1>
-        <p className="text-center text-sm text-gray-600 mb-4">
-          Don't have an account?
-          <Link to="/register" className="text-blue-500 hover:underline ml-1">
-            Sign up
-          </Link>
-        </p>
-        <div className="space-y-4">
-          <a
-            href="https://www.google.com"
-            className="block w-full py-2 px-4 border border-gray-300 rounded-md shadow-sm text-center text-gray-600 hover:bg-gray-50"
-          >
-            <img
-              src="/images/google.png"
-              alt="Google sign-in"
-              className="inline-block mr-2"
-              width={24}
-            />
-            Sign in with Google
-          </a>
-          <a
-            href="https://www.facebook.com"
-            className="block w-full py-2 px-4 bg-blue-600 text-white rounded-md shadow-sm text-center hover:bg-blue-700"
-          >
-            <FaFacebook className="inline mr-2" />
-            Sign in with Facebook
-          </a>
-        </div>
-        <p className="text-center text-gray-500 my-4">Or</p>
-        <form
-          onSubmit={(e) => {
-            e.preventDefault();
-            onSubmit();
-          }}
-        >
-          <div className="space-y-6">
-            <label
-              htmlFor="email"
-              className="block text-sm font-medium text-gray-700"
-            >
-              Email
+    <div className="min-h-screen flex items-center justify-center bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500">
+      <div className="bg-black bg-opacity-25 p-8 rounded-lg shadow-lg max-w-sm w-full">
+        <div className="flex flex-col space-y-6">
+          <h1 className="text-white text-2xl font-bold">Dminers</h1>
+          <input
+            type="text"
+            placeholder="Нэвтрэх нэр"
+            className="input text-white bg-gray-800 rounded border border-gray-700"
+          />
+          <input
+            type="password"
+            placeholder="Нууц үг"
+            className="input text-white bg-gray-800 rounded border border-gray-700"
+          />
+          <div className="flex items-center justify-between">
+            <label className="flex items-center text-sm text-white">
+              <input type="checkbox" className="checkbox" />
+              Намайг сана
             </label>
-            <input
-              type="text"
-              id="email"
-              name="email"
-              autoComplete="email"
-              required
-              className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500"
-              onChange={onchangeEmail}
-              placeholder="example@gmail.com"
-            />
-            <label
-              htmlFor="password"
-              className="block text-sm font-medium text-gray-700"
-            >
-              Password
-            </label>
-            <input
-              type="password"
-              id="password"
-              name="password"
-              required
-              className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500"
-              onChange={onchangePassword}
-              placeholder="Password"
-            />
+            <a href="#" className="text-sm text-blue-200 hover:text-blue-400">
+              Нууц үгээ мартсан
+            </a>
           </div>
-          <div className="flex justify-between items-center mt-4">
-            <label className="flex items-center text-sm text-gray-600">
-              <input
-                type="checkbox"
-                className="form-checkbox h-4 w-4 text-blue-600"
-              />
-              <span className="ml-2">Remember me</span>
-            </label>
-            <Link
-              to="/forgot-password"
-              className="text-sm text-blue-500 hover:underline"
-            >
-              Forgot your password?
-            </Link>
-          </div>
-          <button
-            type="submit"
-            className="mt-6 w-full bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-blue-600"
-          >
-            Sign in
+          <button className="btn bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-2 px-4 rounded">
+            Нэвтрэх
           </button>
-        </form>
+          <div className="flex justify-center space-x-4">
+            <button className="p-2 rounded-full text-white bg-blue-600">
+              <i className="fab fa-facebook-f"></i> Facebook
+            </button>
+            <button className="p-2 rounded-full text-white bg-red-500">
+              <i className="fab fa-google"></i> Google
+            </button>
+          </div>
+        </div>
       </div>
     </div>
   );
