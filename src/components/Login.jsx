@@ -36,53 +36,7 @@ const Login = () => {
         <div className="w-[400px] h-[400px] bg-[#D735FF] absolute -right-[92px] top-0 blur-[120px] rounded-full "></div>
         <div className="w-[400px] h-[400px] bg-[#28FFE2] absolute -left-[92px] bottom-0 blur-[120px] rounded-full "></div>
         <h2 className="text-3xl text-center text-white mb-6">Dminers</h2>
-        <form>
-          <div className="mb-4">
-            <label className="block text-gray-400" for="username">
-              Нэвтрэх нэр
-            </label>
-            <div className="flex items-center border border-gray-700 px-3 py-2 mt-1 relative bg-dark rounded-[4px] hover:before:blur  before:transition before:ease-in-out before:duration-300">
-              <input
-                id="username"
-                type="text"
-                className="bg-gray-900 text-white w-full outline-none"
-                placeholder="Нэвтрэх нэр"
-              />
-            </div>
-          </div>
-          <div className="mb-4">
-            <label className="block text-gray-400" for="password">
-              Нууц үг
-            </label>
-            <div className="flex items-center border border-gray-700 rounded px-3 py-2 mt-1">
-              <input
-                id="password"
-                type="password"
-                className="bg-gray-900 text-white w-full outline-none"
-                placeholder="Нууц үг"
-              />
-              <span className="material-icons text-gray-400 ml-2 cursor-pointer">
-                visibility_off
-              </span>
-            </div>
-          </div>
-          <div className="flex items-center mb-6">
-            <input
-              id="remember"
-              type="checkbox"
-              className="text-indigo-600 focus:ring-indigo-500 h-4 w-4 rounded"
-            />
-            <label for="remember" class="ml-2 block text-gray-400">
-              Намайг сана
-            </label>
-          </div>
-          <button
-            type="submit"
-            className="w-full bg-indigo-500 text-white py-2 rounded hover:bg-indigo-600 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-opacity-50"
-          >
-            Нэвтрэх
-          </button>
-        </form>
+        <form>dad</form>
         <div className="flex items-center justify-between mt-4">
           <button className="bg-white text-gray-900 py-2 px-4 rounded flex items-center w-full justify-center mr-2">
             <img
@@ -92,7 +46,7 @@ const Login = () => {
             />
             Google
           </button>
-          <button class="bg-white text-gray-900 py-2 px-4 rounded flex items-center w-full justify-center ml-2">
+          <button className="bg-white text-gray-900 py-2 px-4 rounded flex items-center w-full justify-center ml-2">
             <img
               src="https://www.svgrepo.com/show/157810/facebook.svg"
               className="h-5 w-5 mr-2"

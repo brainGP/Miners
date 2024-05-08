@@ -7,6 +7,7 @@ import "./index.css";
 import Login from "./components/Login.jsx";
 import SignUp from "./components/Signup.jsx";
 
+import User from "./components/user.jsx";
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <Router>
@@ -15,6 +16,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
         <Route path="/login" element={<Login />} />
         <Route path="/" element={<App />} />
         <Route path="/signup" element={<SignUp />} />
+        <Route path="/user" element={<User />} />
       </Routes>
     </Router>
   </React.StrictMode>

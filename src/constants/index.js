@@ -57,7 +57,6 @@ export const navigation = [
     title: "Давуу тал",
     url: "/#how-to-use",
   },
-
   {
     id: "3",
     title: "Алсын хараа",
