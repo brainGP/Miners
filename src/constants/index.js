@@ -82,11 +82,7 @@ export const notificationImages = [notification4, notification3, notification2];
 
 export const companyLogos = [yourlogo, yourlogo, yourlogo, yourlogo, yourlogo];
 
-export const brainwaveServices = [
-  "Тусламж",
-  "Зөвөлгөө",
-  "Мэдээлэл",
-];
+export const brainwaveServices = ["Тусламж", "Зөвөлгөө", "Мэдээлэл"];
 
 export const brainwaveServicesIcons = [
   recording03,
@@ -251,7 +247,7 @@ export const benefits = [
   {
     id: "0",
     title: "Python",
-    text: "Анхлан суралцагч нарт тохиромжтой хэл бөгөөд хамгийн шилдэг хиймэл оюун ухаан хөгжүүлэхэд ашиглагддаг хэл юм.",
+    text: "Одоогоор хамгийн эрэлттэй программчлалын хэл бөгөөд хиймэл оюун ухаан, машин сургалтад нэн тохиромжтой.",
     backgroundUrl: "./src/assets/benefits/card-1.svg",
     iconUrl: benefitIcon1,
     imageUrl: benefitImage3,
@@ -259,7 +255,7 @@ export const benefits = [
   {
     id: "1",
     title: "Figma",
-    text: "The app uses natural language processing to understand user queries and provide accurate and relevant responses.",
+    text: "UI/UX дизайн гаргахад шалгарсан платформ",
     backgroundUrl: "./src/assets/benefits/card-2.svg",
     iconUrl: benefitIcon2,
     imageUrl: benefitImage4,
@@ -268,7 +264,7 @@ export const benefits = [
   {
     id: "2",
     title: "Next.js",
-    text: "Connect with the AI chatbot from anywhere, on any device, making it more accessible and convenient.",
+    text: "Одоогоор хамгийн эрэлттэй вэб хөгжүүлэлтийн технологи бөгөөд Javascript хэлээр бичигддэг.",
     backgroundUrl: "./src/assets/benefits/card-3.svg",
     iconUrl: benefitIcon3,
     imageUrl: benefitImage5,
@@ -285,15 +281,14 @@ export const benefits = [
   {
     id: "4",
     title: "Flutter",
-    text: "Lets users quickly find answers to their questions without having to search through multiple sources.",
+    text: "Одоогоор хамгийн эрэлттэй мобайл хөгжүүлэлтийн технологи бөгөөд Dart хэлээр бичигддэг.",
     backgroundUrl: "./src/assets/benefits/card-5.svg",
     iconUrl: benefitIcon1,
     imageUrl: benefitImage7,
-
   },
   {
     id: "5",
-    title: "Improve everyday",
+    title: "Эйй",
     text: "The app uses natural language processing to understand user queries and provide accurate and relevant responses.",
     backgroundUrl: "./src/assets/benefits/card-6.svg",
     iconUrl: benefitIcon2,
