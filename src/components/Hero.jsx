@@ -1,4 +1,4 @@
-import { useEffect, useState, useRef } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import { MouseParallax, ScrollParallax } from "react-just-parallax";
 
 import PlusSvg from "../assets/svg/PlusSvg";
@@ -55,7 +55,7 @@ const BackgroundCircles = ({ parallaxRef }) => {
     <div className="absolute -top-[42.375rem] left-1/2 w-[78rem] aspect-square border border-n-2/5 rounded-full -translate-x-1/2 md:-top-[38.5rem] xl:-top-[32rem]">
       <Rings />
       <MouseParallax strength={0.07} parallaxContainerRef={parallaxRef}>
-        {/* Insert the moving elements that are present in the previous JSX code */}
+        {/* Insert the moving elements here */}
       </MouseParallax>
     </div>
   );
@@ -73,51 +73,42 @@ const Hero = () => {
       customPaddings
       id="hero"
     >
+      <div className="relative z-1 max-w-[62rem] mx-auto text-center mb-[3.875rem] md:mb-20 lg:mb-[6.25rem]">
+        <h1 className="h1 mb-6">
+          Дэлхийд мэдлэг олборлох
+          <span className="inline-block relative">
+            Уурхайчид
+            <img
+              src={curve}
+              className="absolute top-full left-0 w-full xl:-mt-2"
+              alt="Curve"
+            />
+          </span>
+        </h1>
+        <p className="body-1 max-w-3xl mx-auto mb-6 text-n-2 lg:mb-8">
+          Тавтай морил
+        </p>
+        <Button href="/login" white>
+          Аялалдаа гарах
+        </Button>
+      </div>
       <div className="container relative" ref={parallaxRef}>
-        <div className="relative z-1 max-w-[62rem] mx-auto text-center mb-[3.875rem] md:mb-20 lg:mb-[6.25rem]">
-          <h1 className="h1 mb-6">
-            Дэлхийд мэдлэг олборлох
-            <span className="inline-block relative">
-              Уурхайчид
-              <img
-                src={curve}
-                className="absolute top-full left-0 w-full xl:-mt-2"
-                alt="Curve"
-              />
-            </span>
-          </h1>
-          <p className="body-1 max-w-3xl mx-auto mb-6 text-n-2 lg:mb-8">
-            Тавтай морил
-          </p>
-          <Button href="/login" white>
-            Аялалдаа гарах
-          </Button>
-        </div>
-        <div className="relative max-w-[23rem] mx-auto md:max-w-5xl xl:mb-24">
-          <div className="relative z-1 p-0.5 rounded-2xl bg-conic-gradient">
-            <div className="relative bg-n-8 rounded-[1rem]">
-              <div className="h-[1.4rem] bg-n-10 rounded-t-[0.9rem]" />
-              <div className="aspect-[33/40] rounded-b-[0.9rem] overflow-hidden md:aspect-[688/490] lg:aspect-[1024/490]">
-                <img
-                  src={robot}
-                  className="w-full scale-[1.7] translate-y-[8%] md:scale-[1] md:-translate-y-[10%] lg:-translate-y-[23%]"
-                  alt="AI"
+        <BackgroundCircles parallaxRef={parallaxRef} />
+        <div className="relative z-1 p-0.5 rounded-2xl bg-conic-gradient">
+          <div className="relative bg-n-8 rounded-t-[100px] rounded-b-[12px]">
+            <div className="h-[1.4rem] bg-n-10 rounded-t-[0.9rem]" />
+            <div className="aspect-[33/40] rounded-b-[0.9rem] overflow-hidden md:aspect-[688/490] lg:aspect-[1024/490]">
+              <img src={robot} className="w-full " alt="AI" />
+              <ScrollParallax isAbsolutelyPositioned></ScrollParallax>
+              <ScrollParallax isAbsolutelyPositioned>
+                <Notification
+                  className="absolute right-[2rem] bottom-[3rem] w-[12rem] xl:w-[18rem] xl:right-[5.5rem] xl:bottom-[11rem]"
+                  title="Process of"
                 />
-                <ScrollParallax isAbsolutelyPositioned></ScrollParallax>
-                <ScrollParallax isAbsolutelyPositioned>
-                  <Notification
-                    className="hidden absolute -right-[5.5rem] bottom-[11rem] w-[18rem] xl:flex"
-                    title="Process of"
-                  />
-                </ScrollParallax>
-              </div>
+              </ScrollParallax>
             </div>
           </div>
-          <BackgroundCircles parallaxRef={parallaxRef} />
-          <Gradient />
-          <BottomLine />
         </div>
-        <CompanyLogos className="hidden relative z-10 mt-20 lg:block" />
       </div>
     </Section>
   );
