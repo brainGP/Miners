@@ -1,4 +1,4 @@
-// import React from "react";
+import React from "react";
 import { mole1 } from "../assets";
 import Button from "./Button";
 import {

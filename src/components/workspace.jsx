@@ -56,10 +56,10 @@ const Workspace = () => {
   return (
     <div className="w-screen h-screen bg-[#0D0C14]">
       {/* Header Section */}
-      <div className="w-full h-[6rem] bg-[#020203] flex justify-between">
-        <div className="h-full w-1/4 flex justify-end items-center">
+      <div className="w-full h-[12%] bg-[#020203] flex justify-between px-4">
+        <div className="h-full w-1/4 flex items-center space-x-4">
           <img src={mole1} className="w-24 aspect-square" alt="logo" />
-          <div className="w-2/3 h-1/2 border-2 rounded-full border-purple-800 flex space-x-2 justify-center items-center px-2">
+          <div className="w-2/3 h-1/2 border-2 rounded-full border-purple-800 flex space-x-2 justify-center items-center px-4">
             <FontAwesomeIcon icon={faSearch} />
             <input
               id="search"
@@ -69,45 +69,30 @@ const Workspace = () => {
             />
           </div>
         </div>
-        <div className="w-1/4 h-full flex justify-center items-center">
+        <div className="w-1/4 h-full flex justify-center items-center space-x-4">
           <Button>
-            <FontAwesomeIcon
-              icon={faHome}
-              className="w-4 hover:border-b-2 h-8"
-            />
+            <FontAwesomeIcon icon={faHome} className="w-6 text-white" />
           </Button>
           <Button>
-            <FontAwesomeIcon
-              icon={faPlay}
-              className="w-4 hover:border-b-2 h-8"
-            />
+            <FontAwesomeIcon icon={faPlay} className="w-6 text-white" />
           </Button>
           <Button>
-            <FontAwesomeIcon
-              icon={faCreditCard}
-              className="w-4 hover:border-b-2 h-8"
-            />
+            <FontAwesomeIcon icon={faCreditCard} className="w-6 text-white" />
           </Button>
           <Button>
-            <FontAwesomeIcon
-              icon={faRobot}
-              className="w-4 hover:border-b-2 h-8"
-            />
+            <FontAwesomeIcon icon={faRobot} className="w-6 text-white" />
           </Button>
         </div>
-        <div className="w-1/6 h-full flex justify-center items-center">
+        <div className="w-1/6 h-full flex justify-center items-center space-x-4">
           <Button>
-            <FontAwesomeIcon
-              icon={faBell}
-              className="w-4 hover:border-b-2 h-8"
-            />
+            <FontAwesomeIcon icon={faBell} className="w-6 text-white" />
           </Button>
           <div className="w-12 h-12 bg-slate-400 rounded-full"></div>
         </div>
       </div>
 
       {/* Sidebar and Main Content */}
-      <div className="w-full h-[43rem] flex items-start">
+      <div className="w-full h-[88%] flex items-start">
         {/* Sidebar */}
         <div className="w-1/4 h-full bg-[#020203] rounded-br-2xl flex flex-col items-center justify-between p-4">
           <div className="w-10/12 h-1/3">
