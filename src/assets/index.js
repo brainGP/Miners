@@ -22,7 +22,7 @@ import loading from "./loading.png";
 import background from "./background.jpg";
 
 import curve from "./hero/curve.png";
-import robot from "./hero/robot.jpg";
+import robot from "./hero/robot.gif";
 import heroBackground from "./hero/hero-background.jpg";
 
 import curve1 from "./collaboration/curve-1.svg";
@@ -73,7 +73,6 @@ import benefitImage4 from "./benefits/image-4.png";
 import benefitImage5 from "./benefits/image-5.png";
 import benefitImage6 from "./benefits/image-6.png";
 import benefitImage7 from "./benefits/image-7.png";
-
 
 import discordBlack from "./socials/discord.svg";
 import facebook from "./socials/facebook.svg";
@@ -147,7 +146,7 @@ export {
   benefitImage2,
   benefitImage3,
   benefitImage4,
-  benefitImage5,  
+  benefitImage5,
   benefitImage6,
   benefitImage7,
   discordBlack,

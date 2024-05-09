@@ -103,20 +103,11 @@ const Hero = () => {
                   className="w-full scale-[1.7] translate-y-[8%] md:scale-[1] md:-translate-y-[10%] lg:-translate-y-[23%]"
                   alt="AI"
                 />
-                <Generating className="absolute left-4 right-4 bottom-5 md:left-1/2 md:right-auto md:bottom-8 md:w-[31rem] md:-translate-x-1/2" />
-                <ScrollParallax isAbsolutelyPositioned>
-                  <ul className="hidden absolute -left-[5.5rem] bottom-[7.5rem] px-1 py-1 bg-n-9/40 backdrop-blur border border-n-1/10 rounded-2xl xl:flex">
-                    {heroIcons.map((icon, index) => (
-                      <li className="p-5" key={index}>
-                        <img src={icon} alt={`Icon ${index}`} />
-                      </li>
-                    ))}
-                  </ul>
-                </ScrollParallax>
+                <ScrollParallax isAbsolutelyPositioned></ScrollParallax>
                 <ScrollParallax isAbsolutelyPositioned>
                   <Notification
                     className="hidden absolute -right-[5.5rem] bottom-[11rem] w-[18rem] xl:flex"
-                    title="Танд туслах хиймэл оюун ухаант хөтөч"
+                    title="Process of"
                   />
                 </ScrollParallax>
               </div>
