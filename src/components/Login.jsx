@@ -62,9 +62,11 @@ const Login = () => {
           <img
             src={brainwave}
             alt="Dminers"
-            className="h-1 w-16 sm:h-20 sm:w-20 -translate-y-20"
+            className="h-40 w-40 sm:h-48 sm:w-48 -translate-y-20"
+            // Adjusted size
           />
         </div>
+
         <h1 className="text-xl sm:text-4xl text-white text-center m-8 animate-slide-in-left">
           Miners
         </h1>
