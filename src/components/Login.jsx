@@ -45,10 +45,10 @@ const Login = () => {
   };
 
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center bg-[#0E0C15] p-4 sm:p-8 pt-0 relative">
+    <div className="h-screen flex flex-col items-center justify-center bg-[#0E0C15] relative">
       <div className="absolute top-0 left-0 m-4">
         <Button
-          className="hidden lg:flex undefined bg-dark rounded-lg gradient-border hover:before:blur before:transition before:ease-in-out before:duration-300"
+          className="hidden lg:flex undefined bg-dark rounded-lg hover:before:blur before:transition before:ease-in-out before:duration-300"
           href="/"
         >
           Буцах
@@ -57,17 +57,17 @@ const Login = () => {
       <ButtonGradient />
       <div className="w-[480px] h-[480px] bg-[#D735FF] absolute -right-[40px] top-0 blur-[160px] rounded-full animate-move-shape"></div>
       <div className="w-[480px] h-[480px] bg-[#28FFE2] absolute -left-[40px] bottom-0 blur-[160px] rounded-full animate-move-shape"></div>
-      <div className="bg-gray-900 p-8 rounded-xl shadow-lg w-full max-w-sm sm:max-w-md lg:max-w-lg animate-fade-in relative border border-gray-500">
-        <div className="flex justify-center mb-6">
+      <div className="bg-gray-900 p-8 rounded-xl shadow-lg w-[50%] h-[65%] max-w-sm sm:max-w-md lg:max-w-lg animate-fade-in  border border-gray-600">
+        <div className="flex justify-center">
           <img
             src={brainwave}
             alt="Dminers"
-            className="h-40 w-40 sm:h-48 sm:w-48 -translate-y-20"
+            className=" sm:h-60 sm:w-60 -my-16 -translate-y-32"
             // Adjusted size
           />
         </div>
 
-        <h1 className="text-xl sm:text-4xl text-white text-center m-8 animate-slide-in-left">
+        <h1 className="text-xl sm:text-4xl text-white text-center mb-8 animate-slide-in-left">
           Miners
         </h1>
         <form onSubmit={onSubmit}>
@@ -122,22 +122,22 @@ const Login = () => {
           <div className="mb-4">
             <button
               type="submit"
-              className="w-full py-2 px-4 bg-white text-gray-700 rounded-lg focus:outline-none focus:ring-2 border-white backdrop-blur-2xl focus:ring-purple-500 gradient-border"
+              className="w-full py-2 px-4 bg-white text-gray-700 rounded-lg focus:outline-none focus:ring-2 border border-white backdrop-blur-2xl focus:ring-purple-500 hover:text-purple-500 hover:border-purple-500"
             >
               Нэвтрэх
             </button>
           </div>
           <div className="flex flex-col sm:flex-row sm:justify-between items-center space-y-2 sm:space-y-0 sm:space-x-2">
-            <Button
+            <button
               type="button"
-              className="w-full sm:w-auto flex items-center justify-center py-2 px-4 bg-gray-700 text-white rounded-lg hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-gray-500 gradient-border"
+              className="w-full sm:w-auto flex items-center justify-center py-2 px-4 bg-gray-700 text-white rounded-lg hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-gray-500"
             >
               <FontAwesomeIcon icon={faGoogle} className="mr-2" />
               Google
-            </Button>
+            </button>
             <a
               type="button"
-              className="w-full sm:w-auto flex items-center justify-center py-2 px-4 bg-gray-700 text-white rounded-lg hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-gray-500 gradient-border"
+              className="w-full sm:w-auto flex items-center justify-center py-2 px-4 bg-gray-700 text-white rounded-lg hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-gray-500"
             >
               <FontAwesomeIcon icon={faFacebook} className="mr-2" />
               Facebook
