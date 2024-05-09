@@ -17,7 +17,7 @@ export default function User() {
       <div className="w-full h-[12%] bg-[#020203] flex justify-between">
         <div className="h-full w-1/4 flex justify-end items-center">
           <img src={mole1} className="w-24 aspect-square"></img>
-          <div className="w-2/3 h-1/2 border-2 rounded-full border-purple-800 flex space-x-2  justify-center items-center px-2"> 
+          <div className="w-2/3 h-1/2 border-2 rounded-full border-purple-800 flex space-x-2  justify-center items-center px-4"> 
             <FontAwesomeIcon icon={faSearch}/>
             <input
               id="search"
@@ -65,6 +65,7 @@ export default function User() {
         </div>
         <div className="w-3/4 h-full">
             <div className="h-1/6 w-full text-3xl flex justify-center items-center">Танд бодит туршлага болохуйц төслүүд</div>
+            <div className="h-5/6 w-full"></div>
         </div>
       </div>
     </div>
