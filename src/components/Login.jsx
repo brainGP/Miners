@@ -418,7 +418,7 @@ const Login = () => {
     <div className="min-h-screen flex flex-col items-center justify-center bg-gray-900 p-4 sm:p-8 pt-0 relative">
       <div className="absolute top-0 left-0 m-4">
         <Button
-          className="hidden lg:flex undefined bg-dark rounded-lg gradient-border hover:before:blur before:transition before:ease-in-out before:duration-300"
+          className="hidden lg:flex undefined bg-dark rounded-lg  hover:before:blur-sm before:transition before:ease-in-out before:duration-300"
           href="/"
         >
           Буцах
@@ -492,7 +492,7 @@ const Login = () => {
           <div className="mb-4">
             <button
               type="submit"
-              className="w-full py-2 px-4 bg-white text-gray-700 rounded-lg focus:outline-none focus:ring-2 border-white backdrop-blur-2xl focus:ring-purple-500 gradient-border"
+              className="w-full py-2 px-4 bg-white text-gray-700 rounded-lg focus:outline-none font-bold focus:ring-2 border-white backdrop-blur-2xl focus:ring-purple-500 hover:text-purple-500"
             >
               Нэвтрэх
             </button>
@@ -500,14 +500,14 @@ const Login = () => {
           <div className="flex flex-col sm:flex-row sm:justify-between items-center space-y-2 sm:space-y-0 sm:space-x-2">
             <Button
               type="button"
-              className="w-full sm:w-auto flex items-center justify-center py-2 px-4 bg-gray-700 text-white rounded-lg hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-gray-500 gradient-border"
+              className="w-full sm:w-auto flex items-center justify-center py-2 px-4 text-white rounded-lg  focus:outline-none focus:ring-2 focus:ring-gray-500 "
             >
               <FontAwesomeIcon icon={faGoogle} className="mr-2" />
               Google
             </Button>
-            <a
+            <Button
               type="button"
-              className="w-full sm:w-auto flex items-center justify-center py-2 px-4 bg-gray-700 text-white rounded-lg hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-gray-500 gradient-border"
+              className="w-full sm:w-auto flex items-center justify-center py-2 px-4  text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-gray-500 "
             >
               <FontAwesomeIcon
                 icon={faFacebook}
@@ -518,7 +518,7 @@ const Login = () => {
                 }}
               />
               Facebook
-            </a>
+            </Button>
           </div>
         </form>
         <p className="text-center text-gray-400 mt-4">
