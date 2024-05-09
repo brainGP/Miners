@@ -14,7 +14,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 export default function User() {
   return(
     <div className="w-screen h-screen bg-[#0D0C14]">
-      <div className="w-full h-[6rem] bg-[#020203] flex justify-between">
+      <div className="w-full h-[12%] bg-[#020203] flex justify-between">
         <div className="h-full w-1/4 flex justify-end items-center">
           <img src={mole1} className="w-24 aspect-square"></img>
           <div className="w-2/3 h-1/2 border-2 rounded-full border-purple-800 flex space-x-2  justify-center items-center px-2"> 
