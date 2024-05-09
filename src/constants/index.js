@@ -255,7 +255,7 @@ export const benefits = [
   {
     id: "1",
     title: "Figma",
-    text: "UI/UX дизайн гаргахад шалгарсан платформ",
+    text: "UI/UX дизайн гаргахад шалгарсан платформ.",
     backgroundUrl: "./src/assets/benefits/card-2.svg",
     iconUrl: benefitIcon2,
     imageUrl: benefitImage4,
