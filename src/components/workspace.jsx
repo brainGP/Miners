@@ -1,6 +1,6 @@
 import React from "react";
-import { mole1 } from "../assets";
-import Button from "./Button";
+import { mole1 } from "../assets"; // Make sure to replace this with the correct path to your image
+import Button from "./Button"; // Ensure this component is correctly implemented
 import {
   faSearch,
   faHome,
@@ -11,60 +11,150 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-export default function User() {
-  return(
+const WorkspaceCard = ({ time, language, title }) => {
+  return (
+    <div className="p-4 bg-[#191726] rounded-lg flex justify-between items-center">
+      <div>
+        <h2 className="text-white text-lg">{title}</h2>
+        <p className="text-gray-400">
+          Workspace &mdash; {time} &mdash; {language}
+        </p>
+      </div>
+      <Button className="text-white">...</Button>
+    </div>
+  );
+};
+
+const WorkspaceList = () => {
+  const workspaces = [
+    { time: "an hour ago", language: "Python 3", title: "Untitled" },
+    { time: "2 hours ago", language: "C++", title: "Untitled" },
+    { time: "3 hours ago", language: "Java", title: "Untitled" },
+  ];
+
+  return (
+    <div className="w-3/4 h-full p-4 justify-between items-center">
+      <div className="flex justify-between items-center mb-4 ">
+        <h1 className="text-white text-2xl">Workspaces</h1>
+        <button className="text-white text-xs">+ New workspace</button>
+      </div>
+      <div className="flex flex-col space-y-4">
+        {workspaces.map((workspace, index) => (
+          <WorkspaceCard
+            key={index}
+            time={workspace.time}
+            language={workspace.language}
+            title={workspace.title}
+          />
+        ))}
+      </div>
+    </div>
+  );
+};
+
+const Workspace = () => {
+  return (
     <div className="w-screen h-screen bg-[#0D0C14]">
-      <div className="w-full h-[12%] bg-[#020203] flex justify-between">
+      {/* Header Section */}
+      <div className="w-full h-[6rem] bg-[#020203] flex justify-between">
         <div className="h-full w-1/4 flex justify-end items-center">
-          <img src={mole1} className="w-24 aspect-square"></img>
-          <div className="w-2/3 h-1/2 border-2 rounded-full border-purple-800 flex space-x-2  justify-center items-center px-4"> 
-            <FontAwesomeIcon icon={faSearch}/>
+          <img src={mole1} className="w-24 aspect-square" alt="logo" />
+          <div className="w-2/3 h-1/2 border-2 rounded-full border-purple-800 flex space-x-2 justify-center items-center px-2">
+            <FontAwesomeIcon icon={faSearch} />
             <input
               id="search"
               type="search"
               placeholder="Хайлт"
               className="w-full h-full rounded-full bg-[#020203]"
-            />  
+            />
           </div>
         </div>
         <div className="w-1/4 h-full flex justify-center items-center">
-        <Button>
-            <FontAwesomeIcon icon={faHome} className="w-12"/>
+          <Button>
+            <FontAwesomeIcon
+              icon={faHome}
+              className="w-4 hover:border-b-2 h-8"
+            />
           </Button>
           <Button>
-            <FontAwesomeIcon icon={faPlay} className="w-12"/>
+            <FontAwesomeIcon
+              icon={faPlay}
+              className="w-4 hover:border-b-2 h-8"
+            />
           </Button>
           <Button>
-            <FontAwesomeIcon icon={faCreditCard} className="w-12"/>
+            <FontAwesomeIcon
+              icon={faCreditCard}
+              className="w-4 hover:border-b-2 h-8"
+            />
           </Button>
           <Button>
-            <FontAwesomeIcon icon={faRobot} className="w-12"/>
+            <FontAwesomeIcon
+              icon={faRobot}
+              className="w-4 hover:border-b-2 h-8"
+            />
           </Button>
         </div>
         <div className="w-1/6 h-full flex justify-center items-center">
           <Button>
-              <FontAwesomeIcon icon={faBell}/>
+            <FontAwesomeIcon
+              icon={faBell}
+              className="w-4 hover:border-b-2 h-8"
+            />
           </Button>
-          <div className="w-12 h-12 bg-slate-400 rounded-full">
-            <img></img>
-          </div>
+          <div className="w-12 h-12 bg-slate-400 rounded-full"></div>
         </div>
       </div>
-      <div className="w-full h-[85%] flex justify-end">
+
+      {/* Sidebar and Main Content */}
+      <div className="w-full h-[43rem] flex items-start">
+        {/* Sidebar */}
         <div className="w-1/4 h-full bg-[#020203] rounded-br-2xl flex flex-col items-center justify-between p-4">
           <div className="w-10/12 h-1/3">
-            <Button className="w-full h-1/5 rounded-lg " href="/user">Dashboard</Button>
-            <Button className="w-full h-1/5 bg-[#191726] rounded-lg" href="/workspace">workspace</Button>
-            <Button className="w-full h-1/5 rounded-lg" href="/projects">projects</Button>
-            <Button className="w-full h-1/5 rounded-lg" href="/learning">learning</Button>
-            <Button className="w-full h-1/5 rounded-lg border-b-1" href="/chatbot">chatbot</Button>
+            <Button
+              className="w-full h-1/5 rounded-lg hover:bg-[#191726]"
+              href="/user"
+            >
+              Dashboard
+            </Button>
+            <Button
+              className="w-full h-1/5 bg-[#191726] rounded-lg hover:bg-[#191726]"
+              href="/workspace"
+            >
+              Workspace
+            </Button>
+            <Button
+              className="w-full h-1/5 rounded-lg hover:bg-[#191726]"
+              href="/projects"
+            >
+              Projects
+            </Button>
+            <Button
+              className="w-full h-1/5 rounded-lg hover:bg-[#191726]"
+              href="/learning"
+            >
+              Learning
+            </Button>
+            <Button
+              className="w-full h-1/5 rounded-lg hover:bg-[#191726]"
+              href="/chatbot"
+            >
+              Chatbot
+            </Button>
           </div>
-          <Button className="w-10/12 h-10 border border-gray-300 rounded-lg flex items-center justify-center" href="/login">
-            Log out 
+          <Button
+            className="w-10/12 h-10 border border-gray-300 rounded-lg flex items-center justify-center"
+            href="/login"
+          >
+            Log out
           </Button>
         </div>
-        <div className="w-3/4 h-full "></div>
+
+        {/* Main Content */}
+        <WorkspaceList />
       </div>
     </div>
   );
-}
+};
+
+export default Workspace;
