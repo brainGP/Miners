@@ -1,4 +1,4 @@
-import React from "react";
+// import React from "react";
 import { mole1 } from "../assets";
 import Button from "./Button";
 import {
@@ -57,13 +57,15 @@ export default function User() {
             <Button className="w-full h-1/5 rounded-lg" href="/workspace">workspace</Button>
             <Button className="w-full h-1/5 bg-[#191726] rounded-lg" href="/projects">projects</Button>
             <Button className="w-full h-1/5 rounded-lg" href="/learning">learning</Button>
-            <Button className="w-full h-1/5 rounded-lg" href="/chatbot">chatbot</Button>
+            <Button className="w-full h-1/5 rounded-lg border-b-1" href="/chatbot">chatbot</Button>
           </div>
           <Button className="w-10/12 h-10 border border-gray-300 rounded-lg flex items-center justify-center" href="/login">
             Log out 
           </Button>
         </div>
-        <div className="w-3/4 h-full "></div>
+        <div className="w-3/4 h-full">
+            <div className="h-1/6 w-full text-3xl flex justify-center items-center">Таньд бодит туршлага болохуйц төслүүд</div>
+        </div>
       </div>
     </div>
   );
