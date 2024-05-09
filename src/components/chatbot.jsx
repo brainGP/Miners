@@ -53,28 +53,17 @@ export default function User() {
       <div className="w-full h-[43rem] flex justify-end">
         <div className="w-1/4 h-full bg-[#020203] rounded-br-2xl flex flex-col items-center justify-between p-4">
           <div className="w-10/12 h-1/3">
-            <Button className="w-full h-1/5 bg-[#191726] rounded-lg " href="/user">Dashboard</Button>
+            <Button className="w-full h-1/5 rounded-lg " href="/user">Dashboard</Button>
             <Button className="w-full h-1/5 rounded-lg" href="/workspace">workspace</Button>
             <Button className="w-full h-1/5 rounded-lg" href="/projects">projects</Button>
             <Button className="w-full h-1/5 rounded-lg" href="/learning">learning</Button>
-            <Button className="w-full h-1/5 rounded-lg" href="/chatbot">chatbot</Button>
+            <Button className="w-full h-1/5 bg-[#191726] rounded-lg" href="/chatbot">chatbot</Button>
           </div>
           <Button className="w-10/12 h-10 border border-gray-300 rounded-lg flex items-center justify-center" href="/login">
             Log out 
           </Button>
         </div>
-        <div className="w-3/4 h-full flex justify-between items-center flex-col pt-[2rem]">
-          <div className="w-11/12 h-80 flex justify-between items-center gap-4 ">
-            <div className="h-full flex-1 bg-black rounded-2xl"></div>
-            <div className="h-full flex-1 bg-black rounded-2xl"></div>
-          </div>
-          <div className="w-11/12 h-80 flex justify-between bg-black items-center gap-12   px-20 rounded-2xl">
-            <div className="h-3/5 flex-1 bg-gray-500 rounded-lg"></div>
-            <div className="h-3/5 flex-1 bg-gray-500 rounded-lg"></div>
-            <div className="h-3/5 flex-1 bg-gray-500 rounded-lg"></div>
-            <div className="h-3/5 flex-1 bg-gray-500 rounded-lg "></div>
-          </div>
-        </div>
+        <div className="w-3/4 h-full "></div>
       </div>
     </div>
   );
