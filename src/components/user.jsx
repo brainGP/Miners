@@ -50,7 +50,7 @@ export default function User() {
           </div>
         </div>
       </div>
-      <div className="w-full h-[43rem] flex justify-end">
+      <div className="w-full h-[85%] flex justify-end">
         <div className="w-1/4 h-full bg-[#020203] rounded-br-2xl flex flex-col items-center justify-between p-4">
           <div className="w-10/12 h-1/3">
             <Button className="w-full h-1/5 bg-[#191726] rounded-lg " href="/user">Dashboard</Button>
@@ -63,7 +63,7 @@ export default function User() {
             Log out 
           </Button>
         </div>
-        <div className="w-3/4 h-full flex justify-between items-center flex-col pt-[2rem]">
+        <div className="w-3/4 h-full flex justify-between items-center flex-col pt-8">
           <div className="w-11/12 h-80 flex justify-between items-center gap-4 ">
             <div className="h-full flex-1 bg-black rounded-2xl flex justify-center items-center flex-col">
               <div className="w-4/5 h-10 text-xl">Сүүлд хийсэн</div>
