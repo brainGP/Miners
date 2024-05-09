@@ -50,7 +50,7 @@ export default function User() {
           </div>
         </div>
       </div>
-      <div className="w-full h-[43rem] flex justify-end">
+      <div className="w-full h-[4rem] flex justify-end">
         <div className="w-1/4 h-full bg-[#020203] rounded-br-2xl flex flex-col items-center justify-between p-4">
           <div className="w-10/12 h-1/3">
             <Button className="w-full h-1/5 bg-[#191726] rounded-lg ">Dashboard</Button>
@@ -67,4 +67,4 @@ export default function User() {
       </div>
     </div>
   );
-};
+}
