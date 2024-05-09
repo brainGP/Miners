@@ -80,28 +80,28 @@ export default function User() {
             <div className="h-full flex-1 border border-gray-500 rounded-3xl flex flex-col items-center py-4">
                 <div className="w-full h-full flex flex-col">
                   <h1 className="w-full h-1/5 flex justify-center items-center text-xl">Web</h1>
-                  <h2 className="w-full h-2/5 flex text-sm text-center">Website-ийн талаар үндсэн ойлголттой болон, web design, page гэх мэт зүйлсийг сурж авна.</h2>
+                  <h2 className="w-full h-2/5 flex text-sm text-center px-2">Website-ийн талаар үндсэн ойлголттой болон, web design, page гэх мэт зүйлсийг сурж авна.</h2>
                 </div>
                 <Button className="w-2/3 h-1/5 bg-gradient-to-t from-[#482378] to-[#8640DE]">Үзэх</Button>
               </div>
               <div className="h-full flex-1 border border-yellow-300 rounded-3xl flex flex-col items-center py-4">
                 <div className="w-full h-full flex flex-col">
                   <h1 className="w-full h-1/5 flex justify-center items-center text-xl">Web</h1>
-                  <h2 className="w-full h-2/5 flex text-sm text-center">Website-ийн талаар үндсэн ойлголттой болон, web design, page гэх мэт зүйлсийг сурж авна.</h2>
+                  <h2 className="w-full h-2/5 flex text-sm text-center px-2">Website-ийн талаар үндсэн ойлголттой болон, web design, page гэх мэт зүйлсийг сурж авна.</h2>
                 </div>
                 <Button className="w-2/3 h-1/5 bg-gradient-to-t from-[#482378] to-[#8640DE]">Үзэх</Button>
               </div>
               <div className="h-full flex-1 border border-blue-300 rounded-3xl flex flex-col items-center py-4">
                 <div className="w-full h-full flex flex-col">
                   <h1 className="w-full h-1/5 flex justify-center items-center text-xl">Web</h1>
-                  <h2 className="w-full h-2/5 flex text-sm text-center">Website-ийн талаар үндсэн ойлголттой болон, web design, page гэх мэт зүйлсийг сурж авна.</h2>
+                  <h2 className="w-full h-2/5 flex text-sm text-center px-2">Website-ийн талаар үндсэн ойлголттой болон, web design, page гэх мэт зүйлсийг сурж авна.</h2>
                 </div>
                 <Button className="w-2/3 h-1/5 bg-gradient-to-t from-[#482378] to-[#8640DE]">Үзэх</Button>
               </div>
               <div className="h-full flex-1 border border-red-300 rounded-3xl flex flex-col items-center py-4">
                 <div className="w-full h-full flex flex-col">
                   <h1 className="w-full h-1/5 flex justify-center items-center text-xl">Web</h1>
-                  <h2 className="w-full h-2/5 flex text-sm text-center">Website-ийн талаар үндсэн ойлголттой болон, web design, page гэх мэт зүйлсийг сурж авна.</h2>
+                  <h2 className="w-full h-2/5 flex text-sm text-center px-2">Website-ийн талаар үндсэн ойлголттой болон, web design, page гэх мэт зүйлсийг сурж авна.</h2>
                 </div>
                 <Button className="w-2/3 h-1/5 bg-gradient-to-t from-[#482378] to-[#8640DE]">Үзэх</Button>
               </div>
