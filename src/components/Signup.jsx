@@ -8,7 +8,7 @@ import {
   faEnvelope,
 } from "@fortawesome/free-solid-svg-icons";
 import { faGoogle, faFacebook } from "@fortawesome/free-brands-svg-icons";
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import ButtonGradient from "../assets/svg/ButtonGradient";
 import { brainwave } from "../assets";
@@ -56,8 +56,8 @@ const Signup = () => {
         </Button>
       </div>
       <ButtonGradient />
-      <div className="w-[320px] h-[320px] bg-[#D735FF] absolute -right-[40px] top-0 blur-[160px] rounded-full animate-move-shape"></div>
-      <div className="w-[320px] h-[320px] bg-[#28FFE2] absolute -left-[40px] bottom-0 blur-[160px] rounded-full animate-move-shape"></div>
+      <div className="w-[420px] h-[420px] bg-[#D735FF] absolute -right-[40px] top-0 blur-[140px] rounded-full animate-move-shape"></div>
+      <div className="w-[420px] h-[420px] bg-[#28FFE2] absolute -left-[40px] bottom-0 blur-[140px] rounded-full animate-move-shape"></div>
       <div className="bg-[#100E17] p-8 rounded-xl shadow-lg w-full max-w-xs sm:max-w-sm lg:max-w-sm animate-fade-in relative border border-gray-500">
         <div className="flex justify-center mb-6">
           <img
@@ -73,10 +73,11 @@ const Signup = () => {
           <div className="mb-4 relative">
             <input
               id="name"
-              className="w-full px-3 py-2 text-white bg-gray-700 rounded-lg focus:outline-none border-2 pl-8"
+              className="w-full px-3 py-2 text-white bg-gray-700 focus:outline-none pl-8"
               placeholder="Бүртгүүлэх нэр"
               style={{
-                borderImage: "linear-gradient(to bottom, #89F9E8, #FACB7B) 1",
+                border: "2px solid transparent",
+                borderImage: "linear-gradient(to right, #89F9E8, #FACB7B) 1",
               }}
             />
             <span className="absolute inset-y-0 left-3 flex items-center text-gray-400">
@@ -89,10 +90,11 @@ const Signup = () => {
               type="email"
               value={email}
               onChange={onChangeEmail}
-              className="w-full px-3 py-2 text-white bg-gray-700 rounded-lg focus:outline-none border-2 pl-8"
+              className="w-full px-3 py-2 text-white bg-gray-700 focus:outline-none pl-8"
               placeholder="Бүртгүүлэх имэйл"
               style={{
-                borderImage: "linear-gradient(to bottom, #89F9E8, #FACB7B) 1",
+                border: "2px solid transparent",
+                borderImage: "linear-gradient(to right, #89F9E8, #FACB7B) 1",
               }}
             />
             <span className="absolute inset-y-0 left-3 flex items-center text-gray-400">
@@ -105,10 +107,11 @@ const Signup = () => {
               type={showPassword ? "text" : "password"}
               value={password}
               onChange={onChangePassword}
-              className="w-full px-3 py-2 text-white bg-gray-700 rounded focus:outline-none border-2 pl-8"
+              className="w-full px-3 py-2 text-white bg-gray-700 focus:outline-none pl-8"
               placeholder="Нууц үг үүсгэх"
               style={{
-                borderImage: "linear-gradient(to bottom, #D87CEE, #FACB7B) 1",
+                border: "2px solid transparent",
+                borderImage: "linear-gradient(to right, #D87CEE, #FACB7B) 1",
               }}
             />
             <span className="absolute inset-y-0 left-3 flex items-center text-gray-400">
@@ -121,7 +124,6 @@ const Signup = () => {
               <FontAwesomeIcon icon={showPassword ? faEyeSlash : faEye} />
             </span>
           </div>
-
           <div className="mb-4">
             <button
               type="submit"

@@ -56,8 +56,8 @@ const Login = () => {
         </Button>
       </div>
       <ButtonGradient />
-      <div className="w-[320px] h-[320px] bg-[#D735FF] absolute -right-[40px] top-0 blur-[160px] rounded-full animate-move-shape"></div>
-      <div className="w-[320px] h-[320px] bg-[#28FFE2] absolute -left-[40px] bottom-0 blur-[160px] rounded-full animate-move-shape"></div>
+      <div className="w-[420px] h-[420px] bg-[#D735FF] absolute -right-[40px] top-0 blur-[140px] rounded-full animate-move-shape"></div>
+      <div className="w-[420px] h-[420px] bg-[#28FFE2] absolute -left-[40px] bottom-0 blur-[140px] rounded-full animate-move-shape"></div>
       <div className="bg-[#100E17] p-8 rounded-xl shadow-lg w-full max-w-xs sm:max-w-sm lg:max-w-sm animate-fade-in relative border border-gray-500">
         <div className="flex justify-center mb-6">
           <img
@@ -115,7 +115,7 @@ const Login = () => {
               className="h-4 w-4 text-purple-500 focus:ring-purple-500 border-gray-300 rounded"
             />
             <label htmlFor="remember-me" className="ml-2 block text-gray-400">
-              Намайг сана
+              Сануулах
             </label>
           </div>
           <div className="mb-4">
