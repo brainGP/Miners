@@ -49,24 +49,24 @@ const Signup = () => {
     <div className="min-h-screen flex flex-col items-center justify-center bg-[#0E0C15] p-4 sm:p-8 pt-0 relative">
       <div className="absolute top-0 left-0 m-4">
         <Button
-          className="hidden lg:flex undefined bg-dark rounded-lg hover:before:blur before:transition before:ease-in-out before:duration-300"
+          className="hidden lg:flex bg-dark rounded-lg hover:before:blur before:transition before:ease-in-out before:duration-300"
           href="/"
         >
           Буцах
         </Button>
       </div>
       <ButtonGradient />
-      <div className="w-[480px] h-[480px] bg-[#D735FF] absolute -right-[40px] top-0 blur-[160px] rounded-full animate-move-shape"></div>
-      <div className="w-[480px] h-[480px] bg-[#28FFE2] absolute -left-[40px] bottom-0 blur-[160px] rounded-full animate-move-shape"></div>
-      <div className="bg-gray-900 p-8 rounded-xl shadow-lg w-full max-w-sm sm:max-w-md lg:max-w-lg animate-fade-in relative border border-gray-500">
+      <div className="w-[320px] h-[320px] bg-[#D735FF] absolute -right-[40px] top-0 blur-[160px] rounded-full animate-move-shape"></div>
+      <div className="w-[320px] h-[320px] bg-[#28FFE2] absolute -left-[40px] bottom-0 blur-[160px] rounded-full animate-move-shape"></div>
+      <div className="bg-[#100E17] p-8 rounded-xl shadow-lg w-full max-w-xs sm:max-w-sm lg:max-w-sm animate-fade-in relative border border-gray-500">
         <div className="flex justify-center mb-6">
           <img
             src={brainwave}
             alt="Dminers"
-            className="h-40 w-40 sm:h-48 sm:w-48 absolute -top-24"
+            className="h-32 w-32 sm:h-40 sm:w-40 absolute -top-20"
           />
         </div>
-        <h1 className="text-xl sm:text-4xl text-white text-center mt-20 mb-8 animate-slide-in-left">
+        <h1 className="text-xl sm:text-3xl text-white text-center mt-16 mb-6 animate-slide-in-left">
           Miners
         </h1>
         <form onSubmit={onSubmit}>
@@ -138,13 +138,13 @@ const Signup = () => {
               <FontAwesomeIcon icon={faGoogle} className="mr-2" />
               Google
             </button>
-            <a
+            <button
               type="button"
               className="w-full sm:w-auto flex items-center justify-center py-2 px-4 bg-gray-700 text-white rounded-lg hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-gray-500"
             >
               <FontAwesomeIcon icon={faFacebook} className="mr-2" />
               Facebook
-            </a>
+            </button>
           </div>
         </form>
       </div>

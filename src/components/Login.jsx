@@ -56,17 +56,17 @@ const Login = () => {
         </Button>
       </div>
       <ButtonGradient />
-      <div className="w-[480px] h-[480px] bg-[#D735FF] absolute -right-[40px] top-0 blur-[160px] rounded-full animate-move-shape"></div>
-      <div className="w-[480px] h-[480px] bg-[#28FFE2] absolute -left-[40px] bottom-0 blur-[160px] rounded-full animate-move-shape"></div>
-      <div className="bg-gray-900 p-8 rounded-xl shadow-lg w-full max-w-sm sm:max-w-md lg:max-w-lg animate-fade-in relative border border-gray-500">
+      <div className="w-[320px] h-[320px] bg-[#D735FF] absolute -right-[40px] top-0 blur-[160px] rounded-full animate-move-shape"></div>
+      <div className="w-[320px] h-[320px] bg-[#28FFE2] absolute -left-[40px] bottom-0 blur-[160px] rounded-full animate-move-shape"></div>
+      <div className="bg-[#100E17] p-8 rounded-xl shadow-lg w-full max-w-xs sm:max-w-sm lg:max-w-sm animate-fade-in relative border border-gray-500">
         <div className="flex justify-center mb-6">
           <img
             src={brainwave}
             alt="Dminers"
-            className="h-40 w-40 sm:h-48 sm:w-48 absolute -top-24"
+            className="h-32 w-32 sm:h-40 sm:w-40 absolute -top-20"
           />
         </div>
-        <h1 className="text-xl sm:text-4xl text-white text-center mt-20 mb-8 animate-slide-in-left">
+        <h1 className="text-xl sm:text-3xl text-white text-center mt-16 mb-6 animate-slide-in-left">
           Miners
         </h1>
         <form onSubmit={onSubmit}>
