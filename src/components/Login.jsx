@@ -76,7 +76,7 @@ const Login = () => {
               type="email"
               value={email}
               onChange={onChangeEmail}
-              className="w-full px-3 py-2 text-gray-900 bg-gray-700 rounded-lg focus:outline-none border-2 pl-8"
+              className="w-full px-3 py-2 text-white bg-gray-700 rounded-lg focus:outline-none border-2 pl-8"
               placeholder="Имэйл"
               style={{
                 borderImage: "linear-gradient(to bottom, #89F9E8, #FACB7B) 1",
@@ -92,7 +92,7 @@ const Login = () => {
               type={showPassword ? "text" : "password"}
               value={password}
               onChange={onChangePassword}
-              className="w-full px-3 py-2 text-gray-900 bg-gray-700 rounded focus:outline-none border-2 pl-8"
+              className="w-full px-3 py-2 text-white bg-gray-700 rounded focus:outline-none border-2 pl-8"
               placeholder="Нууц үг"
               style={{
                 borderImage: "linear-gradient(to bottom, #D87CEE, #FACB7B) 1",

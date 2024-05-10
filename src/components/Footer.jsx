@@ -1,6 +1,6 @@
 import React from "react";
 import Section from "./Section";
-import { socials } from "../constants";
+import { facebook, instagram } from "../assets";
 
 const Footer = () => {
   return (
@@ -11,18 +11,20 @@ const Footer = () => {
           Education IT School
         </p>
 
-        <ul className="flex gap-5 flex-wrap">
-          {socials.map((item) => (
-            <a
-              key={item.id}
-              href={item.url}
-              target="_blank"
-              className="flex items-center justify-center w-10 h-10 bg-n-7 rounded-full transition-colors hover:bg-n-6"
-            >
-              <img src={item.iconUrl} width={16} height={16} alt={item.title} />
-            </a>
-          ))}
-        </ul>
+        <div className="flex gap-5 flex-wrap">
+          <a
+            href="https://www.facebook.com/"
+            className="flex items-center justify-center w-10 h-10 bg-n-7 rounded-full transition-colors hover:bg-n-6"
+          >
+            <img src={facebook} alt="Facebook Icon" />
+          </a>
+          <a
+            href="https://www.instagram.com/nest_education_it_school/"
+            className="flex items-center justify-center w-10 h-10 bg-n-7 rounded-full transition-colors hover:bg-n-6"
+          >
+            <img src={instagram} alt="Instagram Icon" />
+          </a>
+        </div>
       </div>
     </Section>
   );
