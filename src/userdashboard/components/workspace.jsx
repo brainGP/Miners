@@ -1,15 +1,6 @@
 import React from "react";
-import { mole1 } from "../assets"; // Make sure to replace this with the correct path to your image
-import Button from "./Button"; // Ensure this component is correctly implemented
-import {
-  faSearch,
-  faHome,
-  faCreditCard,
-  faPlay,
-  faRobot,
-  faBell,
-} from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import Button from "../../components/Button";
+import UserHeader from "../layout";
 
 const WorkspaceCard = ({ time, language, title }) => {
   return (
@@ -56,46 +47,12 @@ const Workspace = () => {
   return (
     <div className="w-screen h-screen bg-[#0D0C14]">
       {/* Header Section */}
-      <div className="w-full h-[12%] bg-[#020203] flex justify-between px-4">
-        <div className="h-full w-1/4 flex items-center space-x-4">
-          <img src={mole1} className="w-24 aspect-square" alt="logo" />
-          <div className="w-2/3 h-1/2 border-2 rounded-full border-purple-800 flex space-x-2 justify-center items-center px-4">
-            <FontAwesomeIcon icon={faSearch} />
-            <input
-              id="search"
-              type="search"
-              placeholder="Хайлт"
-              className="w-full h-full rounded-full bg-[#020203]"
-            />
-          </div>
-        </div>
-        <div className="w-1/4 h-full flex justify-center items-center space-x-4">
-          <Button>
-            <FontAwesomeIcon icon={faHome} className="w-6 text-white" />
-          </Button>
-          <Button>
-            <FontAwesomeIcon icon={faPlay} className="w-6 text-white" />
-          </Button>
-          <Button>
-            <FontAwesomeIcon icon={faCreditCard} className="w-6 text-white" />
-          </Button>
-          <Button>
-            <FontAwesomeIcon icon={faRobot} className="w-6 text-white" />
-          </Button>
-        </div>
-        <div className="w-1/6 h-full flex justify-center items-center space-x-4">
-          <Button>
-            <FontAwesomeIcon icon={faBell} className="w-6 text-white" />
-          </Button>
-          <div className="w-12 h-12 bg-slate-400 rounded-full"></div>
-        </div>
-      </div>
-
+      <UserHeader/>
       {/* Sidebar and Main Content */}
       <div className="w-full h-[88%] flex items-start">
         {/* Sidebar */}
         <div className="w-1/4 h-full bg-[#020203] rounded-br-2xl flex flex-col items-center justify-between p-4">
-          <div className="w-10/12 h-1/3">
+          <div className="w-10/12 flex flex-col space-y-2">
             <Button
               className="w-full h-1/5 rounded-lg hover:bg-[#191726]"
               href="/user"
@@ -121,7 +78,7 @@ const Workspace = () => {
               Learning
             </Button>
             <Button
-              className="w-full h-1/5 rounded-lg hover:bg-[#191726]"
+              className="w-full h-1/5 rounded-lg hover:bg-[#191726] border-b-1"
               href="/chatbot"
             >
               Chatbot

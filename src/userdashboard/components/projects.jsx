@@ -1,20 +1,12 @@
 import React from "react";
-import { mole1 } from "../assets";
-import Button from "./Button";
-import {
-  faSearch,
-  faHome,
-  faCreditCard,
-  faPlay,
-  faRobot,
-  faBell,
-} from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import Button from "../../components/Button";
+import UserHeader from "../layout";
 
 export default function Projects() {
   return (
     <div className="w-screen h-screen bg-[#0D0C14] text-white">
-      <div className="w-full h-[12%] bg-[#020203] flex justify-between px-4">
+      <UserHeader/>
+      {/* <div className="w-full h-[12%] bg-[#020203] flex justify-between px-4">
         <div className="h-full w-1/4 flex items-center space-x-4">
           <img src={mole1} className="w-24 aspect-square" alt="Logo" />
           <div className="w-2/3 h-1/2 border-2 rounded-full border-purple-800 flex space-x-2 justify-center items-center px-4">
@@ -24,7 +16,7 @@ export default function Projects() {
               type="search"
               placeholder="Хайлт"
               className="w-full h-full rounded-full bg-[#020203] text-white outline-none"
-            />
+            />  
           </div>
         </div>
         <div className="w-1/4 h-full flex justify-center items-center space-x-4">
@@ -49,26 +41,26 @@ export default function Projects() {
             <img src="" alt="User" />
           </div>
         </div>
-      </div>
-      <div className="w-full h-[85%] flex">
+      </div> */}
+      <div className="w-full h-[88%] flex items-start ">
         <div className="w-1/4 h-full bg-[#020203] rounded-br-2xl flex flex-col items-center justify-between p-4">
-          <div className="w-10/12 space-y-2">
-            <Button className="w-full h-10 rounded-lg" href="/user">
+          <div className="w-10/12 h-1/3 space-y-2">
+            <Button className="w-full h-1/5 rounded-lg hover:bg-[#191726]" href="/user">
               Dashboard
             </Button>
-            <Button className="w-full h-10 rounded-lg" href="/workspace">
+            <Button className="w-full h-1/5 rounded-lg hover:bg-[#191726]" href="/workspace">
               Workspace
             </Button>
             <Button
-              className="w-full h-10 bg-[#191726] rounded-lg"
+              className="w-full h-1/5 bg-[#191726] rounded-lg"
               href="/projects"
             >
               Projects
             </Button>
-            <Button className="w-full h-10 rounded-lg" href="/learning">
+            <Button className="w-full h-1/5 rounded-lg hover:bg-[#191726]" href="/learning">
               Learning
             </Button>
-            <Button className="w-full h-10 rounded-lg" href="/chatbot">
+            <Button className="w-full h-1/5 rounded-lg border-b-1 hover:bg-[#191726]" href="/chatbot">
               Chatbot
             </Button>
           </div>
@@ -79,7 +71,7 @@ export default function Projects() {
             Log out
           </Button>
         </div>
-        <div className="w-3/4 h-full p-6 bg-[#191726]">
+        <div className="w-3/4 h-[95%] p-6 flex flex-col ">
           <div className="h-1/6 w-full text-3xl flex justify-center items-center ">
             Танд бодит туршлага болохуйц төслүүд
           </div>
@@ -87,7 +79,7 @@ export default function Projects() {
             {Array.from({ length: 6 }).map((_, index) => (
               <div
                 key={index}
-                className="bg-[#191726] flex flex-col justify-center items-center p-4 border rounded-3xl"
+                className="flex flex-col justify-center items-center p-4 border rounded-3xl"
               >
                 <h3 className="text-xl mb-2">Spotify</h3>
                 <p className="text-center">
