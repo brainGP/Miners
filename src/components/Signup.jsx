@@ -129,7 +129,7 @@ const Signup = () => {
               type="submit"
               className="w-full py-2 px-4 bg-white text-gray-700 rounded-lg focus:outline-none focus:ring-2 border border-white backdrop-blur-2xl focus:ring-purple-500 hover:text-purple-500 hover:border-purple-500"
             >
-              Нэвтрэх
+              Бүртгүүлэх
             </button>
           </div>
           <div className="flex flex-col sm:flex-row sm:justify-between items-center space-y-2 sm:space-y-0 sm:space-x-2">
