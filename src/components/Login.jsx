@@ -5,6 +5,7 @@ import {
   faLock,
   faEye,
   faEyeSlash,
+  faEnvelope,
 } from "@fortawesome/free-solid-svg-icons";
 import { faGoogle, faFacebook } from "@fortawesome/free-brands-svg-icons";
 import { Link, useNavigate } from "react-router-dom";
@@ -45,7 +46,7 @@ const Login = () => {
   };
 
   return (
-    <div className="h-screen flex flex-col items-center justify-center bg-[#0E0C15] relative">
+    <div className="min-h-screen flex flex-col items-center justify-center bg-[#0E0C15] p-4 sm:p-8 pt-0 relative">
       <div className="absolute top-0 left-0 m-4">
         <Button
           className="hidden lg:flex undefined bg-dark rounded-lg hover:before:blur before:transition before:ease-in-out before:duration-300"
@@ -57,17 +58,15 @@ const Login = () => {
       <ButtonGradient />
       <div className="w-[480px] h-[480px] bg-[#D735FF] absolute -right-[40px] top-0 blur-[160px] rounded-full animate-move-shape"></div>
       <div className="w-[480px] h-[480px] bg-[#28FFE2] absolute -left-[40px] bottom-0 blur-[160px] rounded-full animate-move-shape"></div>
-      <div className="bg-gray-900 p-8 rounded-xl shadow-lg w-[50%] h-[65%] max-w-sm sm:max-w-md lg:max-w-lg animate-fade-in  border border-gray-600">
-        <div className="flex justify-center">
+      <div className="bg-gray-900 p-8 rounded-xl shadow-lg w-full max-w-sm sm:max-w-md lg:max-w-lg animate-fade-in relative border border-gray-500">
+        <div className="flex justify-center mb-6">
           <img
             src={brainwave}
             alt="Dminers"
-            className="h-40 w-40 sm:h-48 sm:w-48 -translate-y-20"
-            // Adjusted size
+            className="h-40 w-40 sm:h-48 sm:w-48 absolute -top-24"
           />
         </div>
-
-        <h1 className="text-xl sm:text-4xl text-white text-center mb-8 animate-slide-in-left">
+        <h1 className="text-xl sm:text-4xl text-white text-center mt-20 mb-8 animate-slide-in-left">
           Miners
         </h1>
         <form onSubmit={onSubmit}>
@@ -84,7 +83,7 @@ const Login = () => {
               }}
             />
             <span className="absolute inset-y-0 left-3 flex items-center text-gray-400">
-              <FontAwesomeIcon icon={faUser} />
+              <FontAwesomeIcon icon={faEnvelope} />
             </span>
           </div>
           <div className="mb-4 relative">
