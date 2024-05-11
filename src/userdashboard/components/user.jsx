@@ -13,7 +13,7 @@ export default function User() {
             <Button
               className="w-full h-1/5 rounded-lg bg-[#191726]"
               href="/user"
-            >
+            > 
               Эхлэл
             </Button>
             <Button

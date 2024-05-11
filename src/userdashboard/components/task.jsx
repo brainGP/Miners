@@ -31,7 +31,7 @@ export default function Task(){
                             <h1 className="text-4xl pl-8">5. Хувьсагч</h1>
                         </div>
                         <div className="w-full h-1/4 border-4 border-gray-900 rounded-2xl flex items-center">
-                            <h1 className="text-4xl pl-8">6. print("Welcome")</h1>
+                            <h1 className="text-4xl pl-8"></h1>
                         </div>
                     </div>
                 </div>
