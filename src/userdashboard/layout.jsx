@@ -1,6 +1,6 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faSearch, faHome, faPlay, faCreditCard, faRobot, faBell } from '@fortawesome/free-solid-svg-icons';
+import { faSearch, faHome, faPlay, faCreditCard, faRobot, faBell , faUser} from '@fortawesome/free-solid-svg-icons';
 import { mole1 } from "../assets";
 import Button from '../components/Button';
 
@@ -23,7 +23,7 @@ const UserHeader = () => {
         <Button className="text-white" href="/user">
           <FontAwesomeIcon icon={faHome} className="w-6" />
         </Button>
-        <Button className="text-white">
+        <Button className="text-white" href="/task">
           <FontAwesomeIcon icon={faPlay} className="w-6" />
         </Button>
         <Button className="text-white">
