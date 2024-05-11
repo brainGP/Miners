@@ -5,36 +5,39 @@ import UserHeader from "../layout";
 export default function Learning() {
   return (
     <div className="w-screen h-screen bg-[#0D0C14] text-white">
-      <UserHeader/>
+      <UserHeader />
       <div className="w-full h-[88%] flex items-start">
         <div className="w-1/4 h-full bg-[#020203] rounded-br-2xl flex flex-col items-center justify-between p-4">
           <div className="w-10/12 flex flex-col space-y-2">
-            <Button className="w-full h-1/5 rounded-lg text-white hover:bg-[#191726]" href="/user">
-              Dashboard
+            <Button
+              className="w-full h-1/5 rounded-lg text-white hover:bg-[#191726]"
+              href="/user"
+            >
+              Эхлэл
             </Button>
             <Button
               className="w-full h-1/5 rounded-lg text-white hover:bg-[#191726]"
               href="/workspace"
             >
-              Workspace
+              Эхлүүлсэн төслүүд
             </Button>
             <Button
               className="w-full h-1/5 rounded-lg text-white hover:bg-[#191726]"
               href="/projects"
             >
-              Projects
+              Төслүүд
             </Button>
             <Button
               className="w-full h-1/5 bg-[#191726] rounded-lg text-white"
               href="/learning"
             >
-              Learning
+              Миний сургалтууд
             </Button>
             <Button
               className="w-full h-1/5 rounded-lg text-white border-b-1 hover:bg-[#191726]"
               href="/chatbot"
             >
-              Chatbot
+              Чатбот
             </Button>
           </div>
           <Button

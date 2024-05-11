@@ -1,7 +1,7 @@
+// src/components/Login.jsx
 import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
-  faUser,
   faLock,
   faEye,
   faEyeSlash,
@@ -16,7 +16,6 @@ import Button from "./Button";
 
 const Login = () => {
   const [email, setEmail] = useState("");
-  const [role, setRole] = useState("admin");
   const [password, setPassword] = useState("");
   const [showPassword, setShowPassword] = useState(false);
 
@@ -29,19 +28,15 @@ const Login = () => {
   const onSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post(
-        `http://localhost:9000/api/users/login`,
-        {
-          email,
-          role,
-          password,
-        }
-      );
-      navigate("/");
-      alert("Амжилттай нэвтэрлээ."); // Consider using a more user-friendly notification system
+      const response = await axios.post(`http://localhost:8080/userLogin`, {
+        email,
+        password,
+      });
+      alert("Амжилттай нэвтэрлээ.");
+      navigate("/user"); // Navigate to /user on successful login
     } catch (err) {
       console.error(err);
-      alert("Login failed!"); // Display error message to the user
+      alert("Login failed!");
     }
   };
 
@@ -49,15 +44,15 @@ const Login = () => {
     <div className="min-h-screen flex flex-col items-center justify-center bg-[#0E0C15] p-4 sm:p-8 pt-0 relative">
       <div className="absolute top-0 left-0 m-4">
         <Button
-          className="hidden lg:flex undefined bg-dark rounded-lg hover:before:blur before:transition before:ease-in-out before:duration-300"
+          className="hidden lg:flex bg-dark rounded-lg hover:before:blur before:transition before:ease-in-out before:duration-300"
           href="/"
         >
           Буцах
         </Button>
       </div>
       <ButtonGradient />
-      <div className="w-[320px] h-[320px] bg-[#D735FF] absolute -right-[40px] top-0 blur-[160px] rounded-full animate-move-shape"></div>
-      <div className="w-[320px] h-[320px] bg-[#28FFE2] absolute -left-[40px] bottom-0 blur-[160px] rounded-full animate-move-shape"></div>
+      <div className="w-[420px] h-[420px] bg-[#D735FF] absolute -right-[40px] top-0 blur-[140px] rounded-full animate-move-shape"></div>
+      <div className="w-[420px] h-[420px] bg-[#28FFE2] absolute -left-[40px] bottom-0 blur-[140px] rounded-full animate-move-shape"></div>
       <div className="bg-[#100E17] p-8 rounded-xl shadow-lg w-full max-w-xs sm:max-w-sm lg:max-w-sm animate-fade-in relative border border-gray-500">
         <div className="flex justify-center mb-6">
           <img
@@ -115,7 +110,7 @@ const Login = () => {
               className="h-4 w-4 text-purple-500 focus:ring-purple-500 border-gray-300 rounded"
             />
             <label htmlFor="remember-me" className="ml-2 block text-gray-400">
-              Намайг сана
+              Сануулах
             </label>
           </div>
           <div className="mb-4">

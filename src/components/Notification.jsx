@@ -36,7 +36,7 @@ const Notification = ({ className, title }) => {
               </li>
             ))}
           </ul>
-          <div className="body-2 text-n-13">Process</div>
+          {/* <div className="body-2 text-n-13">Бидний бяцхан процесс</div> */}
         </div>
       </div>
     </div>

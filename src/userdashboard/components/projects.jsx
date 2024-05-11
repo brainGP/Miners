@@ -5,7 +5,7 @@ import UserHeader from "../layout";
 export default function Projects() {
   return (
     <div className="w-screen h-screen bg-[#0D0C14] text-white">
-      <UserHeader/>
+      <UserHeader />
       {/* <div className="w-full h-[12%] bg-[#020203] flex justify-between px-4">
         <div className="h-full w-1/4 flex items-center space-x-4">
           <img src={mole1} className="w-24 aspect-square" alt="Logo" />
@@ -45,23 +45,35 @@ export default function Projects() {
       <div className="w-full h-[88%] flex items-start ">
         <div className="w-1/4 h-full bg-[#020203] rounded-br-2xl flex flex-col items-center justify-between p-4">
           <div className="w-10/12 h-1/3 space-y-2">
-            <Button className="w-full h-1/5 rounded-lg hover:bg-[#191726]" href="/user">
-              Dashboard
+            <Button
+              className="w-full h-1/5 rounded-lg hover:bg-[#191726]"
+              href="/user"
+            >
+              Эхлэл
             </Button>
-            <Button className="w-full h-1/5 rounded-lg hover:bg-[#191726]" href="/workspace">
-              Workspace
+            <Button
+              className="w-full h-1/5 rounded-lg hover:bg-[#191726]"
+              href="/workspace"
+            >
+              Эхлүүлсэн төслүүд
             </Button>
             <Button
               className="w-full h-1/5 bg-[#191726] rounded-lg"
               href="/projects"
             >
-              Projects
+              Төслүүд
             </Button>
-            <Button className="w-full h-1/5 rounded-lg hover:bg-[#191726]" href="/learning">
-              Learning
+            <Button
+              className="w-full h-1/5 rounded-lg hover:bg-[#191726]"
+              href="/learning"
+            >
+              Миний сургалтууд
             </Button>
-            <Button className="w-full h-1/5 rounded-lg border-b-1 hover:bg-[#191726]" href="/chatbot">
-              Chatbot
+            <Button
+              className="w-full h-1/5 rounded-lg border-b-1 hover:bg-[#191726]"
+              href="/chatbot"
+            >
+              Чатбот
             </Button>
           </div>
           <Button

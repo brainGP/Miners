@@ -47,7 +47,7 @@ const Workspace = () => {
   return (
     <div className="w-screen h-screen bg-[#0D0C14]">
       {/* Header Section */}
-      <UserHeader/>
+      <UserHeader />
       {/* Sidebar and Main Content */}
       <div className="w-full h-[88%] flex items-start">
         {/* Sidebar */}
@@ -57,31 +57,31 @@ const Workspace = () => {
               className="w-full h-1/5 rounded-lg hover:bg-[#191726]"
               href="/user"
             >
-              Dashboard
+              Эхлэл
             </Button>
             <Button
               className="w-full h-1/5 bg-[#191726] rounded-lg hover:bg-[#191726]"
               href="/workspace"
             >
-              Workspace
+              Эхлүүлсэн төслүүд
             </Button>
             <Button
               className="w-full h-1/5 rounded-lg hover:bg-[#191726]"
               href="/projects"
             >
-              Projects
+              Төслүүд
             </Button>
             <Button
               className="w-full h-1/5 rounded-lg hover:bg-[#191726]"
               href="/learning"
             >
-              Learning
+              Миний сургалтууд
             </Button>
             <Button
               className="w-full h-1/5 rounded-lg hover:bg-[#191726] border-b-1"
               href="/chatbot"
             >
-              Chatbot
+              Чатбот
             </Button>
           </div>
           <Button

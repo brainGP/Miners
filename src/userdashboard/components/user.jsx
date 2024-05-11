@@ -5,28 +5,40 @@ import { framer } from "../../assets";
 
 export default function User() {
   return (
-    <div className="w-screen h-screen bg- ">
+    <div className="w-screen h-screen bg-[#0D0C14]">
       <UserHeader/>
       <div className="w-full h-[88%] flex justify-end">
-      <div className="w-1/4 h-full bg-[#020203] rounded-br-2xl flex flex-col items-center justify-between p-4">
+        <div className="w-1/4 h-full bg-[#020203] rounded-br-2xl flex flex-col items-center justify-between p-4">
           <div className="w-10/12 h-1/3 space-y-2">
-            <Button className="w-full h-1/5 rounded-lg bg-[#191726]" href="/user">
-              Dashboard
+            <Button
+              className="w-full h-1/5 rounded-lg bg-[#191726]"
+              href="/user"
+            >
+              Эхлэл
             </Button>
-            <Button className="w-full h-1/5 rounded-lg hover:bg-[#191726]" href="/workspace">
-              Workspace
+            <Button
+              className="w-full h-1/5 rounded-lg hover:bg-[#191726]"
+              href="/workspace"
+            >
+              Эхлүүлсэн төслүүд
             </Button>
             <Button
               className="w-full h-1/5 rounded-lg hover:bg-[#191726]"
               href="/projects"
             >
-              Projects
+              Төслүүд
             </Button>
-            <Button className="w-full h-1/5 rounded-lg hover:bg-[#191726]" href="/learning">
-              Learning
+            <Button
+              className="w-full h-1/5 rounded-lg hover:bg-[#191726]"
+              href="/learning"
+            >
+              Миний сургалтууд
             </Button>
-            <Button className="w-full h-1/5 rounded-lg border-b-1 hover:bg-[#191726]" href="/chatbot">
-              Chatbot
+            <Button
+              className="w-full h-1/5 rounded-lg border-b-1 hover:bg-[#191726]"
+              href="/chatbot"
+            >
+              Чатбот
             </Button>
           </div>
           <Button

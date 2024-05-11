@@ -1,6 +1,5 @@
 import React, { useEffect, useState, useRef } from "react";
 import { MouseParallax, ScrollParallax } from "react-just-parallax";
-
 import PlusSvg from "../assets/svg/PlusSvg";
 import { curve, heroBackground, robot } from "../assets";
 import Button from "./Button";
@@ -43,7 +42,7 @@ const BottomLine = () => {
   );
 };
 
-// BackgroundCircles component for the parallax effect
+// BackgroundCircles component for the parallax effect with moving elements
 const BackgroundCircles = ({ parallaxRef }) => {
   const [mounted, setMounted] = useState(false);
 
@@ -55,7 +54,49 @@ const BackgroundCircles = ({ parallaxRef }) => {
     <div className="absolute -top-[42.375rem] left-1/2 w-[78rem] aspect-square border border-n-2/5 rounded-full -translate-x-1/2 md:-top-[38.5rem] xl:-top-[32rem]">
       <Rings />
       <MouseParallax strength={0.07} parallaxContainerRef={parallaxRef}>
-        {/* Insert the moving elements here */}
+        {/* Moving background colored circle balls */}
+        <div className="absolute bottom-1/2 left-1/2 w-0.25 h-1/2 origin-bottom rotate-[46deg]">
+          <div
+            className={`w-2 h-2 -ml-1 -mt-36 bg-gradient-to-b from-[#DD734F] to-[#1A1A32] rounded-full transition-transform duration-500 ease-out ${
+              mounted ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"
+            }`}
+          />
+        </div>
+        <div className="absolute bottom-1/2 left-1/2 w-0.25 h-1/2 origin-bottom -rotate-[56deg]">
+          <div
+            className={`w-4 h-4 -ml-1 -mt-32 bg-gradient-to-b from-[#DD734F] to-[#1A1A32] rounded-full transition-transform duration-500 ease-out ${
+              mounted ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"
+            }`}
+          />
+        </div>
+        <div className="absolute bottom-1/2 left-1/2 w-0.25 h-1/2 origin-bottom rotate-[54deg]">
+          <div
+            className={`hidden w-4 h-4 -ml-1 mt-[12.9rem] bg-gradient-to-b from-[#B9AEDF] to-[#1A1A32] rounded-full xl:block transit transition-transform duration-500 ease-out ${
+              mounted ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"
+            }`}
+          />
+        </div>
+        <div className="absolute bottom-1/2 left-1/2 w-0.25 h-1/2 origin-bottom -rotate-[65deg]">
+          <div
+            className={`w-3 h-3 -ml-1.5 mt-52 bg-gradient-to-b from-[#B9AEDF] to-[#1A1A32] rounded-full transition-transform duration-500 ease-out ${
+              mounted ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"
+            }`}
+          />
+        </div>
+        <div className="absolute bottom-1/2 left-1/2 w-0.25 h-1/2 origin-bottom -rotate-[85deg]">
+          <div
+            className={`w-6 h-6 -ml-3 -mt-3 bg-gradient-to-b from-[#88E5BE] to-[#1A1A32] rounded-full transition-transform duration-500 ease-out ${
+              mounted ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"
+            }`}
+          />
+        </div>
+        <div className="absolute bottom-1/2 left-1/2 w-0.25 h-1/2 origin-bottom rotate-[70deg]">
+          <div
+            className={`w-6 h-6 -ml-3 -mt-3 bg-gradient-to-b from-[#88E5BE] to-[#1A1A32] rounded-full transition-transform duration-500 ease-out ${
+              mounted ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"
+            }`}
+          />
+        </div>
       </MouseParallax>
     </div>
   );
@@ -98,12 +139,12 @@ const Hero = () => {
           <div className="relative bg-n-8 rounded-t-[100px] rounded-b-[12px]">
             <div className="h-[1.4rem] bg-n-10 rounded-t-[0.9rem]" />
             <div className="aspect-[33/40] rounded-b-[0.9rem] overflow-hidden md:aspect-[688/490] lg:aspect-[1024/490]">
-              <img src={robot} className="w-full " alt="AI" />
+              <img src={robot} className="w-full" alt="AI" />
               <ScrollParallax isAbsolutelyPositioned></ScrollParallax>
               <ScrollParallax isAbsolutelyPositioned>
                 <Notification
                   className="absolute right-[2rem] bottom-[3rem] w-[12rem] xl:w-[18rem] xl:right-[5.5rem] xl:bottom-[11rem]"
-                  title="Process of"
+                  title="Код бичиж сурцгаая"
                 />
               </ScrollParallax>
             </div>
