@@ -5,27 +5,39 @@ import UserHeader from "../layout";
 export default function User() {
   return (
     <div className="w-screen h-screen bg-[#0D0C14]">
-      <UserHeader/>
+      <UserHeader />
       <div className="w-full h-[88%] flex justify-end">
-      <div className="w-1/4 h-full bg-[#020203] rounded-br-2xl flex flex-col items-center justify-between p-4">
+        <div className="w-1/4 h-full bg-[#020203] rounded-br-2xl flex flex-col items-center justify-between p-4">
           <div className="w-10/12 h-1/3 space-y-2">
-            <Button className="w-full h-1/5 rounded-lg bg-[#191726]" href="/user">
-              Dashboard
+            <Button
+              className="w-full h-1/5 rounded-lg bg-[#191726]"
+              href="/user"
+            >
+              Эхлэл
             </Button>
-            <Button className="w-full h-1/5 rounded-lg hover:bg-[#191726]" href="/workspace">
-              Workspace
+            <Button
+              className="w-full h-1/5 rounded-lg hover:bg-[#191726]"
+              href="/workspace"
+            >
+              Эхлүүлсэн төслүүд
             </Button>
             <Button
               className="w-full h-1/5 rounded-lg hover:bg-[#191726]"
               href="/projects"
             >
-              Projects
+              Төслүүд
             </Button>
-            <Button className="w-full h-1/5 rounded-lg hover:bg-[#191726]" href="/learning">
-              Learning
+            <Button
+              className="w-full h-1/5 rounded-lg hover:bg-[#191726]"
+              href="/learning"
+            >
+              Миний сургалтууд
             </Button>
-            <Button className="w-full h-1/5 rounded-lg border-b-1 hover:bg-[#191726]" href="/chatbot">
-              Chatbot
+            <Button
+              className="w-full h-1/5 rounded-lg border-b-1 hover:bg-[#191726]"
+              href="/chatbot"
+            >
+              Чатбот
             </Button>
           </div>
           <Button
@@ -49,7 +61,7 @@ export default function User() {
           <div className="w-11/12 h-80 flex flex-col justify-center bg-[#191726] items-center px-20 rounded-2xl">
             <div className="h-10 w-full text-xl text-white">
               Таньд санал болгох
-              </div>
+            </div>
             <div className="h-3/5 w-full flex gap-12">
               {["gray-500", "yellow-300", "blue-300", "red-300"].map(
                 (color, index) => (
@@ -57,7 +69,7 @@ export default function User() {
                     key={index}
                     className={`h-full flex-1 border border-${color} rounded-3xl flex flex-col items-center py-4`}
                   >
-                <div className="w-full h-full flex flex-col">
+                    <div className="w-full h-full flex flex-col">
                       <h1 className="w-full h-1/5 flex justify-center items-center text-xl text-white">
                         Web
                       </h1>
@@ -65,11 +77,11 @@ export default function User() {
                         Website-ийн талаар үндсэн ойлголттой болон, web design,
                         page гэх мэт зүйлсийг сурж авна.
                       </h2>
-                </div>
+                    </div>
                     <Button className="w-2/3 h-1/5 bg-gradient-to-t from-[#482378] to-[#8640DE] text-white">
                       Үзэх
                     </Button>
-              </div>
+                  </div>
                 )
               )}
             </div>

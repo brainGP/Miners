@@ -288,8 +288,8 @@ export const benefits = [
   },
   {
     id: "5",
-    title: "Эйй",
-    text: "The app uses natural language processing to understand user queries and provide accurate and relevant responses.",
+    title: "ExpressJS",
+    text: "Өгөгдлийн сан улирдлагын технологи",
     backgroundUrl: "./src/assets/benefits/card-6.svg",
     iconUrl: benefitIcon2,
     imageUrl: benefitImage2,

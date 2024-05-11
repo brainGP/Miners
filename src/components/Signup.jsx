@@ -1,3 +1,4 @@
+// src/components/Signup.jsx
 import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -15,13 +16,14 @@ import { brainwave } from "../assets";
 import Button from "./Button";
 
 const Signup = () => {
+  const [username, setUsername] = useState(""); // State for username
   const [email, setEmail] = useState("");
-  const [role, setRole] = useState("admin");
   const [password, setPassword] = useState("");
   const [showPassword, setShowPassword] = useState(false);
 
   const navigate = useNavigate();
 
+  const onChangeUsername = (e) => setUsername(e.target.value); // Handler for username
   const onChangeEmail = (e) => setEmail(e.target.value);
   const onChangePassword = (e) => setPassword(e.target.value);
   const togglePasswordVisibility = () => setShowPassword(!showPassword);
@@ -29,19 +31,16 @@ const Signup = () => {
   const onSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post(
-        `http://localhost:9000/api/users/login`,
-        {
-          email,
-          role,
-          password,
-        }
-      );
+      const response = await axios.post(`http://localhost:8080/userSignup`, {
+        username, // Include username in the API call
+        email,
+        password,
+      });
       navigate("/");
-      alert("Амжилттай нэвтэрлээ."); // Consider using a more user-friendly notification system
+      alert("Амжилттай бүртгүүллээ."); // Consider using a more user-friendly notification system
     } catch (err) {
       console.error(err);
-      alert("Login failed!"); // Display error message to the user
+      alert("Signup failed!"); // Display error message to the user
     }
   };
 
@@ -72,7 +71,10 @@ const Signup = () => {
         <form onSubmit={onSubmit}>
           <div className="mb-4 relative">
             <input
-              id="name"
+              id="username"
+              type="text"
+              value={username}
+              onChange={onChangeUsername}
               className="w-full px-3 py-2 text-white bg-gray-700 focus:outline-none pl-8"
               placeholder="Бүртгүүлэх нэр"
               style={{

@@ -1,7 +1,7 @@
+// src/components/Login.jsx
 import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
-  faUser,
   faLock,
   faEye,
   faEyeSlash,
@@ -16,7 +16,6 @@ import Button from "./Button";
 
 const Login = () => {
   const [email, setEmail] = useState("");
-  const [role, setRole] = useState("admin");
   const [password, setPassword] = useState("");
   const [showPassword, setShowPassword] = useState(false);
 
@@ -29,19 +28,15 @@ const Login = () => {
   const onSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post(
-        `http://localhost:9000/api/users/login`,
-        {
-          email,
-          role,
-          password,
-        }
-      );
-      navigate("/");
-      alert("Амжилттай нэвтэрлээ."); // Consider using a more user-friendly notification system
+      const response = await axios.post(`http://localhost:8080/userLogin`, {
+        email,
+        password,
+      });
+      alert("Амжилттай нэвтэрлээ.");
+      navigate("/user"); // Navigate to /user on successful login
     } catch (err) {
       console.error(err);
-      alert("Login failed!"); // Display error message to the user
+      alert("Login failed!");
     }
   };
 
@@ -49,7 +44,7 @@ const Login = () => {
     <div className="min-h-screen flex flex-col items-center justify-center bg-[#0E0C15] p-4 sm:p-8 pt-0 relative">
       <div className="absolute top-0 left-0 m-4">
         <Button
-          className="hidden lg:flex undefined bg-dark rounded-lg hover:before:blur before:transition before:ease-in-out before:duration-300"
+          className="hidden lg:flex bg-dark rounded-lg hover:before:blur before:transition before:ease-in-out before:duration-300"
           href="/"
         >
           Буцах

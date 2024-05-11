@@ -144,7 +144,7 @@ const Hero = () => {
               <ScrollParallax isAbsolutelyPositioned>
                 <Notification
                   className="absolute right-[2rem] bottom-[3rem] w-[12rem] xl:w-[18rem] xl:right-[5.5rem] xl:bottom-[11rem]"
-                  title="Process of"
+                  title="Код бичиж сурцгаая"
                 />
               </ScrollParallax>
             </div>
